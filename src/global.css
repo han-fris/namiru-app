@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* variables */
+:root {
+  --background-primary: #DAB5AF;
+  --background-secondary: #77778e;
+  --text: #1f2403;
+  --text-navigation: #0808b4;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  background-image: radial-gradient(farthest-corner at 60% 65%, var(--background-secondary), var(--background-primary));
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1,
+h2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+header {
+  font-size: 1.5rem;
+}
