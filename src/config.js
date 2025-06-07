@@ -23,4 +23,12 @@ export const filters = [
     name: 'material',
     label: 'Materiál',
   },
+  {
+    name: 'creatorType',
+    label: 'Typ tvůrce',
+  },
+  {
+    name: 'region',
+    label: 'Region',
+  },
 ];

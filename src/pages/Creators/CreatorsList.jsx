@@ -5,6 +5,7 @@ import { Filters } from '../../components/Filter/Filters';
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { creatorsSourceUrl } from '../../config';
 import { useState, useEffect } from 'react';
+import { useFilters } from '../../hooks/useFilters';
 
 export const CreatorList = () => {
   const [creators, setCreators] = useState([]);
@@ -18,6 +19,8 @@ export const CreatorList = () => {
     };
     uploadCreators();
   }, []);
+
+  useFilters();
 
   return (
     <PageWrapper>
