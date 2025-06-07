@@ -1,8 +1,8 @@
-export const FilterOption = ({ name }) => {
+export const FilterOption = ({ label, name, value }) => {
   return (
     <label>
-      <input type="checkbox" />
-      {name}
+      <input type="checkbox" name={name} value={value} />
+      {label}
     </label>
   );
 };
