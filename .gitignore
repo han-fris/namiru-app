@@ -1,6 +1,5 @@
 # Ignore the package-lock.json to prevent conflicts when collaborating
-
-package-lock.json
+#package-lock.json
 
 # Logs
 logs
@@ -41,8 +40,10 @@ node_modules/
 # Generated output
 dist
 
-# VS Code settings
-.vscode
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
 
 # Mac OS General
 
