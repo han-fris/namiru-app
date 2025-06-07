@@ -29,7 +29,7 @@ export const useFilteredCreators = () => {
     }
 
     const result = [];
-
+    const ranking = {};
     for (const creator of allCreators) {
       let hits = 0;
       for (const [filterKey, filterValues] of filters) {
@@ -43,8 +43,14 @@ export const useFilteredCreators = () => {
       }
       if (hits) {
         result.push(creator);
+        ranking[creator.id] = hits;
+      } else {
+        ranking[creator.id] = 0;
       }
     }
+    result.sort((a, b) => {
+      return ranking[b.id] - ranking[a.id];
+    });
     setFilteredCreators(result);
   }, [allCreators, filters]);
 
