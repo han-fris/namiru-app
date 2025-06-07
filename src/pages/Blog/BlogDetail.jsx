@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react';
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { blogpostSourceUrl } from '../../config';
 import '../../global.css';
-import './BlogDetail.css';
-import img1 from './../../../public/img/trans2.jpg';
 
 export const BlogDetail = () => {
   const { id } = useParams();

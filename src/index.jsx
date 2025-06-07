@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     element: <CreatorList />,
   },
   {
-    path: '/tvurci/:id',
+    path: '/tvurce/:id',
     element: <CreatorDetail />,
   },
   {
