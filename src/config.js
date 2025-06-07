@@ -1,6 +1,6 @@
 // https://docs.google.com/spreadsheets/d/1Ev1swB-zamqmO4Htush-wRefSX8TuUjC6uNgdM-Llp0/edit?usp=sharing
 export const creatorsSourceUrl =
-  'https://script.google.com/macros/s/AKfycbwBGdtUwFGU6J5vLdhYXB3NCkP9-Uod2TJ3rBRRD5shlWZE5-a96fcWJWvGw432_vYH/exec';
+  'https://script.google.com/macros/s/AKfycbwlBn2jb_Gdxek8LImHeKFozqKWFTqQiKscyGvHBy_uV4OGduHCOISJUY7aTxv90Xk/exec';
 
 export const blogpostSourceUrl =
   'https://script.google.com/macros/s/AKfycbzJzpW-l-ZVTME7wGhwqfd0QsPe3BLn5jBNlQ3RLtHxABBO51CIUV93IT8nHNfxXgg/exec';
