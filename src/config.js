@@ -11,7 +11,7 @@ export const filters = [
     label: 'Zaměření',
   },
   {
-    name: 'targetCustomer',
+    name: 'targetCustomers',
     label: 'Typ zákazníka',
   },
   {
