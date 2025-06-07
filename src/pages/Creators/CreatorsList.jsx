@@ -1,6 +1,6 @@
 import '../../global.css';
-import { ProfileItem } from '../../components/Profiles/ProfileItem';
-import { Profiles } from '../../components/Profiles/Profiles';
+import { CreatorProfileItem } from '../../components/CreatorsProfiles/CreatorProfileItem';
+import { CreatorsProfiles } from '../../components/CreatorsProfiles/CreatorsProfiles';
 import { Filters } from '../../components/Filter/Filters';
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { creatorsSourceUrl } from '../../config';
@@ -15,15 +15,15 @@ export const CreatorList = () => {
     <PageWrapper>
       <h1>Seznam tvůrců a filtrování</h1>
       <Filters />
-      <Profiles>
+      <CreatorsProfiles>
         {creators.map((creator) => (
-          <ProfileItem
+          <CreatorProfileItem
             key={creator.id}
             name={creator.name}
             region={creator.region_text}
           />
         ))}
-      </Profiles>
+      </CreatorsProfiles>
     </PageWrapper>
   );
 };

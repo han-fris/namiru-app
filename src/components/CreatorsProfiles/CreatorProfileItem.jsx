@@ -1,4 +1,4 @@
-export const ProfileItem = ({ name, region }) => {
+export const CreatorProfileItem = ({ name, region }) => {
   return (
     <>
       <h2>{name}</h2>
