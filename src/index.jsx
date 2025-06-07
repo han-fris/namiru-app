@@ -1,4 +1,3 @@
-import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 import { HomePage } from './pages/HomePage/HomePage';
@@ -40,5 +39,5 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.querySelector('#app')).render(
-  <RouterProvider router={router} />,
+  <RouterProvider router={router} />
 );
