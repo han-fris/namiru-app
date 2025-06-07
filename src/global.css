@@ -3,9 +3,9 @@
 /* variables */
 :root {
   --background-primary: #D1C6BE;
-  --background-secondary: #77778e;
-  --text: #1f2403;
-  --text-navigation: #0808b4;
+  --background-secondary: #BD9E89;
+  --text: #2B2B2B;
+  --text-navigation: #1F06AC;
 }
 
 *,
@@ -33,7 +33,11 @@ html {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
