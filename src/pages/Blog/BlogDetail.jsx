@@ -2,6 +2,7 @@ import { useParams } from 'react-router';
 import { useState, useEffect } from 'react';
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { blogpostSourceUrl } from '../../config';
+import img1 from '../../../public/img/trans1.jpg';
 import '../../global.css';
 
 export const BlogDetail = () => {
