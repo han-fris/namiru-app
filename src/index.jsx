@@ -2,6 +2,12 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 import { HomePage } from './pages/HomePage/HomePage';
+import { BlogDetail } from './pages/Blog/BlogDetail';
+import { BlogList } from './pages/Blog/BlogList';
+import { CreatorDetail } from './pages/Creators/CreatorDetail';
+import { CreatorList } from './pages/Creators/CreatorsList';
+import { NotFound } from './pages/NotFound';
+
 import './global.css';
 
 createRoot(document.querySelector('#app')).render(<HomePage />);
@@ -13,23 +19,23 @@ const router = createBrowserRouter([
   },
   {
     path: '/blog',
-    element: <div>blog</div>,
+    element: <BlogList />,
   },
   {
     path: '/blog/:id',
-    element: <div>blogDetail</div>,
+    element: <BlogDetail />,
   },
   {
     path: '/tvurci',
-    element: <div>tvurci</div>,
+    element: <CreatorList />,
   },
   {
     path: '/tvurci/:id',
-    element: <div>tvurciId</div>,
+    element: <CreatorDetail />,
   },
   {
     path: '*',
-    element: <div>404</div>,
+    element: <NotFound />,
   },
 ]);
 
