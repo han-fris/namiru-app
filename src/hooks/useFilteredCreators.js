@@ -22,8 +22,22 @@ export const useFilteredCreators = () => {
     if (!allCreators) return;
 
     const result = [];
+    const filtersByKey = Object.entries(filters);
     for (const creator of allCreators) {
-      <></>;
+      let hits = 0;
+      for (const [filterKey, filterValues] of filtersByKey) {
+        for (const filterValue of filterValues) {
+          if (creator[filterKey][filterValue]) {
+            hits++;
+          }
+        }
+      }
+      if (hits) {
+        result.push(creator);
+      }
     }
-  });
+    setFilteredCreators(result);
+  }, [allCreators, filters]);
+
+  return filteredCreators;
 };

@@ -17,4 +17,5 @@ export function useFilters() {
   //   }
   // });
   console.log(resultFilters);
+  return resultFilters
 }
