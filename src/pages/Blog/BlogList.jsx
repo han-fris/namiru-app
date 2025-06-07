@@ -1,13 +1,10 @@
 import '../../global.css';
+import { PageWrapper } from '../../components/shared/PageWrapper';
 
 export const BlogList = () => {
   return (
-    <div className="container">
-      <header>
-        <h1>Blog list</h1>
-      </header>
-      <main></main>
-      <footer></footer>
-    </div>
+    <PageWrapper>
+      <h1>Blog list</h1>
+    </PageWrapper>
   );
 };
