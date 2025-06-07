@@ -1,15 +1,21 @@
+import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router';
 import { filters } from '../config';
 
 export function useFilters() {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const resultFilters = [];
-  for (const filter of filters) {
-    const filterValue = searchParams.get(filter.name);
-    if (filterValue) {
-      resultFilters.push(filter.name, filterValue.split(' '));
+  const [searchParams] = useSearchParams();
+  const [resultFilters, setResultFilters] = useState([]);
+
+  useEffect(() => {
+    const newFilters = [];
+    for (const filter of filters) {
+      const filterValue = searchParams.get(filter.name);
+      if (filterValue) {
+        newFilters.push([filter.name, filterValue.split(' ')]);
+      }
     }
-  }
-  console.log(resultFilters);
+    setResultFilters(newFilters);
+  }, [searchParams]);
+
   return resultFilters;
 }

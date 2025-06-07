@@ -19,14 +19,23 @@ export const useFilteredCreators = () => {
   }, []);
 
   useEffect(() => {
-    if (!allCreators) return;
+    if (!allCreators) {
+      return;
+    }
+
+    if (!filters.length) {
+      setFilteredCreators(allCreators);
+      return;
+    }
 
     const result = [];
 
     for (const creator of allCreators) {
       let hits = 0;
       for (const [filterKey, filterValues] of filters) {
+        console.log(filterKey, filterValues);
         for (const filterValue of filterValues) {
+          console.log({ creator, filterKey, filterValue });
           if (creator[filterKey][filterValue]) {
             hits++;
           }
@@ -37,7 +46,7 @@ export const useFilteredCreators = () => {
       }
     }
     setFilteredCreators(result);
-  }, [allCreators]);
+  }, [allCreators, filters]);
 
   return filteredCreators;
 };
