@@ -1,6 +1,6 @@
 import { FilterOption } from './FilterOption';
 import { FilterCategory } from './FilterCategory';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router';
 
 export const Filters = () => {
   const [searchParams, setSearchParams] = useSearchParams();
