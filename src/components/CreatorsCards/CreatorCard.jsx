@@ -5,7 +5,7 @@ export const CreatorCard = ({ name, region, creator }) => {
     <>
       <h2>{name}</h2>
       <pre>{region}</pre>
-      <Link to={`/tvurci/${creator.id}`}>Zobrazit profil tvůrce</Link>
+      <Link to={`/tvurce/${creator.id}`}>Zobrazit profil tvůrce</Link>
     </>
   );
 };

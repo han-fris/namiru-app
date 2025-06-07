@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { blogpostSourceUrl } from '../../config';
 import '../../global.css';
+
 export const BlogDetail = () => {
   const { id } = useParams();
   const [article, setArticle] = useState({});
