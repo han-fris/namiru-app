@@ -1,6 +1,8 @@
+import { Header } from './Header';
+
 export const PageWrapper = ({ children }) => (
   <div className="container">
-    <header>Ahoj{/**hlavni menu nahore s logem a menu - <Header /> */}</header>
+    <Header />
     <main className="maincontainer">{children}</main>
     <footer>{/** paticka - <Footer /> */}</footer>
   </div>

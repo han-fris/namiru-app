@@ -47,10 +47,38 @@ h6 {
   color: var(--text-navigation);
 }
 
-header {
-  font-size: 1.5rem;
+.brand {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: var(--text-navigation);
+  font-size: 4rem;
 }
 
+header {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+
 .maincontainer {
-  border: 10px solid black;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+footer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
 }
