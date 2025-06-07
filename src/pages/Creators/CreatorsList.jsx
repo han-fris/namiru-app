@@ -1,12 +1,15 @@
 import '../../global.css';
+import { Filters } from '../../components/Filter/Filters';
 
 export const CreatorList = () => {
   return (
     <div className="container">
       <header>
-        <h1>Seznam tvůrců</h1>
+        <h1>Seznam tvůrců a filtrování</h1>
       </header>
-      <main></main>
+      <main>
+        <Filters />
+      </main>
       <footer></footer>
     </div>
   );
