@@ -2,6 +2,9 @@
 export const creatorsSourceUrl =
   'https://script.google.com/macros/s/AKfycbwBGdtUwFGU6J5vLdhYXB3NCkP9-Uod2TJ3rBRRD5shlWZE5-a96fcWJWvGw432_vYH/exec';
 
+export const blogpostSourceUrl =
+  'https://script.google.com/macros/s/AKfycbzJzpW-l-ZVTME7wGhwqfd0QsPe3BLn5jBNlQ3RLtHxABBO51CIUV93IT8nHNfxXgg/exec';
+
 export const filters = [
   {
     name: 'specialization',
