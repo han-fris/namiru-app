@@ -1,8 +1,8 @@
-export const FilterOption = () => {
+export const FilterOption = ({ name }) => {
   return (
     <label>
       <input type="checkbox" />
-      minimal
+      {name}
     </label>
   );
 };
