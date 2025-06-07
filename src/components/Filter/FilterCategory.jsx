@@ -1,7 +1,7 @@
-export const FilterCategory = ({ children }) => {
+export const FilterCategory = ({ children, label }) => {
   return (
     <fieldset>
-      <legend>Čauky</legend>
+      <legend>{label}</legend>
       {children}
     </fieldset>
   );
