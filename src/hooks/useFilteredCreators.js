@@ -19,7 +19,14 @@ export const useFilteredCreators = () => {
   }, []);
 
   useEffect(() => {
-    if (!allCreators) return;
+    if (!allCreators) {
+      return;
+    }
+
+    if (!filters.length) {
+      setFilteredCreators(allCreators);
+      return;
+    }
 
     const result = [];
 
