@@ -6,21 +6,10 @@ import { PageWrapper } from '../../components/shared/PageWrapper';
 import { creatorsSourceUrl } from '../../config';
 import { useState, useEffect } from 'react';
 import { useFilters } from '../../hooks/useFilters';
+import { useFilteredCreators } from '../../hooks/useFilteredCreators';
 
 export const CreatorList = () => {
-  const [creators, setCreators] = useState([]);
-
-  useEffect(() => {
-    const uploadCreators = async () => {
-      const response = await fetch(creatorsSourceUrl);
-      const responseData = await response.json();
-      console.log(responseData);
-      setCreators(responseData);
-    };
-    uploadCreators();
-  }, []);
-
-  useFilters();
+  const creators = useFilteredCreators();
 
   return (
     <PageWrapper>
