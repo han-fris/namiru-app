@@ -3,6 +3,7 @@ import { ProfileItem } from '../../components/Profiles/ProfileItem';
 import { Profiles } from '../../components/Profiles/Profiles';
 import { Filters } from '../../components/Filter/Filters';
 import { PageWrapper } from '../../components/shared/PageWrapper';
+import { creatorsSourceUrl } from '../../config';
 import { useState, useEffect } from 'react';
 
 export const CreatorList = () => {
@@ -10,9 +11,7 @@ export const CreatorList = () => {
 
   useEffect(() => {
     const uploadCreators = async () => {
-      const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbwBGdtUwFGU6J5vLdhYXB3NCkP9-Uod2TJ3rBRRD5shlWZE5-a96fcWJWvGw432_vYH/exec'
-      );
+      const response = await fetch(creatorsSourceUrl);
       const responseData = await response.json();
       console.log(responseData);
       setCreators(responseData);
