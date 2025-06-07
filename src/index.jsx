@@ -9,8 +9,6 @@ import { NotFound } from './pages/NotFound';
 
 import './global.css';
 
-createRoot(document.querySelector('#app')).render(<HomePage />);
-
 const router = createBrowserRouter([
   {
     path: '/',
@@ -38,6 +36,5 @@ const router = createBrowserRouter([
   },
 ]);
 
-createRoot(document.querySelector('#app')).render(
-  <RouterProvider router={router} />
-);
+const root = createRoot(document.getElementById('app'));
+root.render(<RouterProvider router={router} />);

@@ -4,4 +4,12 @@
   align-items: flex-start;
   position: relative;
   padding-bottom: 2.5em;
+  margin: 8rem 0;
+  gap: 1rem;
+}
+
+@media (min-width: 800px) {
+  .hero-text {
+    max-width: 70%;
+  }
 }
