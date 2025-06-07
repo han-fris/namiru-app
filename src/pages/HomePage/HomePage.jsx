@@ -5,9 +5,7 @@ import { PageWrapper } from '../../components/shared/PageWrapper';
 export const HomePage = () => {
   return (
     <PageWrapper>
-      <div>
-        <HeroSection />
-      </div>
+      <HeroSection />
     </PageWrapper>
   );
 };

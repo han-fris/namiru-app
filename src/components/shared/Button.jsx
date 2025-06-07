@@ -1,8 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import './Button.css';
 
-export const Button = () => {
-
+export const Button = ({ text, url, ...props }) => {
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    if (url) navigate(url);
+  };
   return (
-   <button className="btn">Najít tvůrce</button>
-  )
-}
+    <button onClick={handleClick} className="btn" {...props}>
+      {text}
+    </button>
+  );
+};
