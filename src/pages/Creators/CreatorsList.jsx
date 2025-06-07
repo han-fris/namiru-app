@@ -1,11 +1,10 @@
 import '../../global.css';
-import { CreatorProfileItem } from '../../components/CreatorsProfiles/CreatorProfileItem';
-import { CreatorsProfiles } from '../../components/CreatorsProfiles/CreatorsProfiles';
+import { CreatorCard } from '../../components/CreatorsCards/CreatorCard';
+import { CreatorsCardsList } from '../../components/CreatorsCards/CreatorsCardsList';
 import { Filters } from '../../components/Filter/Filters';
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { creatorsSourceUrl } from '../../config';
 import { useState, useEffect } from 'react';
-import { useFilters } from '../../hooks/useFilters';
 import { useFilteredCreators } from '../../hooks/useFilteredCreators';
 
 export const CreatorList = () => {
@@ -15,15 +14,16 @@ export const CreatorList = () => {
     <PageWrapper>
       <h1>Seznam tvůrců a filtrování</h1>
       <Filters />
-      <CreatorsProfiles>
+      <CreatorsCardsList>
         {creators.map((creator) => (
-          <CreatorProfileItem
+          <CreatorCard
+            creator={creator}
             key={creator.id}
             name={creator.name}
             region={creator.region_text}
           />
         ))}
-      </CreatorsProfiles>
+      </CreatorsCardsList>
     </PageWrapper>
   );
 };
