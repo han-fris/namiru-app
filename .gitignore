@@ -41,7 +41,8 @@ node_modules/
 dist
 
 # Editors
-.vscode/
+.vscode/*
+!.vscode/extensions.json
 .idea/
 
 # Mac OS General
