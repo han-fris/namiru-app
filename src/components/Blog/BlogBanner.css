@@ -1,9 +1,26 @@
 .banner {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: 2rem;
   margin: 4rem 0;
+  gap: 6rem;
 
+}
+
+.banner-img {
+  width: 50%;
+  height: auto;
+}
+
+.banner-title {
+  font-size: 2.5rem;
+  max-width: 75%;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .banner-content {

@@ -34,6 +34,7 @@ export const BlogList = () => {
             paragraph={article.paragraf1}
             buttonText={article.buttonText1}
             buttonUrl={'/'}
+            index={index}
           />
         ))}
     </PageWrapper>
