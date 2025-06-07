@@ -17,7 +17,7 @@ export const BlogBanner = ({
   paragraph,
   imgPosition,
 }) => {
-  const randomIndex = Math.floor(Math.random * images.length);
+  const randomIndex = Math.floor(Math.random() * images.length);
   const randomImg = images[randomIndex];
 
   return (
