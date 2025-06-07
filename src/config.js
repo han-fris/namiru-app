@@ -1,4 +1,6 @@
-export const creatorsSourceUrl = 'https://script.google.com/macros/s/AKfycbwBGdtUwFGU6J5vLdhYXB3NCkP9-Uod2TJ3rBRRD5shlWZE5-a96fcWJWvGw432_vYH/exec';
+// https://docs.google.com/spreadsheets/d/1Ev1swB-zamqmO4Htush-wRefSX8TuUjC6uNgdM-Llp0/edit?usp=sharing
+export const creatorsSourceUrl =
+  'https://script.google.com/macros/s/AKfycbwBGdtUwFGU6J5vLdhYXB3NCkP9-Uod2TJ3rBRRD5shlWZE5-a96fcWJWvGw432_vYH/exec';
 
 export const filters = [
   {
