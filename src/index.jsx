@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Link } from 'react-router';
 import { HomePage } from './pages/HomePage/HomePage';
 import { BlogDetail } from './pages/Blog/BlogDetail';
 import { BlogList } from './pages/Blog/BlogList';
