@@ -15,4 +15,5 @@ export default defineConfig([
     languageOptions: { globals: globals.browser },
   },
   pluginReact.configs.flat.recommended,
+  pluginReact.configs.flat['jsx-runtime'],
 ]);
