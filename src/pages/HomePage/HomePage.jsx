@@ -1,13 +1,17 @@
+import { HeroSection } from '../../components/Homepage/HeroSection';
 import './HomePage.css';
+import { PageWrapper } from '../../components/shared/PageWrapper';
 
 export const HomePage = () => {
   return (
-    <div className="container">
-      <header>
+    <PageWrapper>
+      <div>
         <h1>Namiru</h1>
-      </header>
-      <main></main>
-      <footer></footer>
-    </div>
+      </div>
+      <div>
+        <HeroSection />
+      </div>
+      <div></div>
+    </PageWrapper>
   );
 };
