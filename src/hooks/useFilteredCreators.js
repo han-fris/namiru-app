@@ -19,11 +19,40 @@ export const useFilteredCreators = () => {
   }, []);
 
   useEffect(() => {
-    if (!allCreators) return;
+    if (!allCreators) {
+      return;
+    }
+
+    if (!filters.length) {
+      setFilteredCreators(allCreators);
+      return;
+    }
 
     const result = [];
+    const ranking = {};
     for (const creator of allCreators) {
-      <></>;
+      let hits = 0;
+      for (const [filterKey, filterValues] of filters) {
+        console.log(filterKey, filterValues);
+        for (const filterValue of filterValues) {
+          console.log({ creator, filterKey, filterValue });
+          if (creator[filterKey][filterValue]) {
+            hits++;
+          }
+        }
+      }
+      if (hits) {
+        result.push(creator);
+        ranking[creator.id] = hits;
+      } else {
+        ranking[creator.id] = 0;
+      }
     }
-  });
+    result.sort((a, b) => {
+      return ranking[b.id] - ranking[a.id];
+    });
+    setFilteredCreators(result);
+  }, [allCreators, filters]);
+
+  return filteredCreators;
 };

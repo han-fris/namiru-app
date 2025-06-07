@@ -1,40 +1,29 @@
 import '../../global.css';
-import { ProfileItem } from '../../components/Profiles/ProfileItem';
-import { Profiles } from '../../components/Profiles/Profiles';
+import { CreatorProfileItem } from '../../components/CreatorsProfiles/CreatorProfileItem';
+import { CreatorsProfiles } from '../../components/CreatorsProfiles/CreatorsProfiles';
 import { Filters } from '../../components/Filter/Filters';
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { creatorsSourceUrl } from '../../config';
 import { useState, useEffect } from 'react';
 import { useFilters } from '../../hooks/useFilters';
+import { useFilteredCreators } from '../../hooks/useFilteredCreators';
 
 export const CreatorList = () => {
-  const [creators, setCreators] = useState([]);
-
-  useEffect(() => {
-    const uploadCreators = async () => {
-      const response = await fetch(creatorsSourceUrl);
-      const responseData = await response.json();
-      console.log(responseData);
-      setCreators(responseData);
-    };
-    uploadCreators();
-  }, []);
-
-  useFilters();
+  const creators = useFilteredCreators();
 
   return (
     <PageWrapper>
       <h1>Seznam tvůrců a filtrování</h1>
       <Filters />
-      <Profiles>
+      <CreatorsProfiles>
         {creators.map((creator) => (
-          <ProfileItem
+          <CreatorProfileItem
             key={creator.id}
             name={creator.name}
             region={creator.region_text}
           />
         ))}
-      </Profiles>
+      </CreatorsProfiles>
     </PageWrapper>
   );
 };
