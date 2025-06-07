@@ -1,7 +1,8 @@
-export const ProfileItem = ({ name }) => {
+export const ProfileItem = ({ name, region }) => {
   return (
-    <div>
+    <>
       <h2>{name}</h2>
-    </div>
+      <pre>{region}</pre>
+    </>
   );
 };

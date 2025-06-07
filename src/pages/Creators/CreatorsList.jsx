@@ -26,7 +26,11 @@ export const CreatorList = () => {
       <Filters />
       <Profiles>
         {creators.map((creator) => (
-          <ProfileItem key={creator.id} name={creator.name} />
+          <ProfileItem
+            key={creator.id}
+            name={creator.name}
+            region={creator.region_text}
+          />
         ))}
       </Profiles>
     </PageWrapper>
