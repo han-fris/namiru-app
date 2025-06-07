@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Link } from 'react-router';
 import { HomePage } from './pages/HomePage/HomePage';
 import { BlogDetail } from './pages/Blog/BlogDetail';
 import { BlogList } from './pages/Blog/BlogList';
@@ -8,8 +8,6 @@ import { CreatorList } from './pages/Creators/CreatorsList';
 import { NotFound } from './pages/NotFound';
 
 import './global.css';
-
-createRoot(document.querySelector('#app')).render(<HomePage />);
 
 const router = createBrowserRouter([
   {
@@ -38,6 +36,5 @@ const router = createBrowserRouter([
   },
 ]);
 
-createRoot(document.querySelector('#app')).render(
-  <RouterProvider router={router} />
-);
+const root = createRoot(document.getElementById('app'));
+root.render(<RouterProvider router={router} />);
