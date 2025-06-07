@@ -1,9 +1,25 @@
 import { FilterOption } from './FilterOption';
 import { FilterCategory } from './FilterCategory';
+import { useSearchParams } from 'react-router-dom';
 
 export const Filters = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const changeHandler = (e) => {
+    const formData = new FormData(e.currentTarget);
+    const newSearchParams = {};
+    for (const [key, value] of formData.entries()) {
+      newSearchParams[key] ??= [];
+      newSearchParams[key].push(value);
+    }
+    const stringifiedSearchParams = new URLSearchParams();
+    for (const key in newSearchParams) {
+      stringifiedSearchParams.set(key, newSearchParams[key].join(' '));
+    }
+    setSearchParams(stringifiedSearchParams);
+  };
+
   return (
-    <form onChange={(e) => console.log(e)}>
+    <form onChange={changeHandler}>
       <FilterCategory label="Typ tvůrce">
         <FilterOption label="Švadelena, krejčí" name="creatorType" value="1" />
         <FilterOption label="Krejčovská dílna" name="creatorType" value="2" />
