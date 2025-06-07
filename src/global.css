@@ -44,6 +44,7 @@ h6 {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+  color: var(--text-navigation);
 }
 
 header {

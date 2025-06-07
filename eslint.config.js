@@ -21,4 +21,10 @@ export default defineConfig([
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat['jsx-runtime'],
   pluginReactHooks.configs['recommended-latest'],
+  {
+    files: ['**/*.{js,mjs,cjs,jsx}'],
+    rules: {
+      'react/prop-types': 'off',
+    },
+  },
 ]);
