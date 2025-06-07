@@ -1,7 +1,11 @@
+import { Link } from 'react-router';
+
 export const Header = () => {
   return (
     <header>
-      <p className="brand">Namiru</p>
+      <Link to={'/'} className="brand">
+        Namiru
+      </Link>
       <p className="navigation-item">Blog</p>
     </header>
   );

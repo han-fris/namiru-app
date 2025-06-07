@@ -56,6 +56,7 @@ h6 {
     "wdth" 100;
   color: var(--text-navigation);
   font-size: 4rem;
+  text-decoration: none;
 }
 
 header {

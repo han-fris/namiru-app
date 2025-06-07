@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import './Button.css';
 
 export const Button = ({ text, url, ...props }) => {
