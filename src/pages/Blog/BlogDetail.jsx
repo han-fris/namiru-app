@@ -26,7 +26,7 @@ export const BlogDetail = () => {
 
     void loadArticle();
   }, []);
-  console.log('a', article);
+
   return (
     <PageWrapper>
       {loading ? (
@@ -46,7 +46,7 @@ export const BlogDetail = () => {
               <p className="paragraph">{article.paragraf3}</p>
               <h2 className="subtitle">{article.podnadpis3}</h2>
               <p className="paragraph">{article.paragraf4}</p>
-              <Button to={article.buttonUrl1} text={article.buttonText1} />
+              <Button url={article.buttonUrl1} text={article.buttonText1} />
             </div>
           )}
         </>

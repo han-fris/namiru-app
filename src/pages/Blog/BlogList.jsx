@@ -33,8 +33,6 @@ export const BlogList = () => {
             key={index}
             title={article.nadpis}
             paragraph={article.paragraf1}
-            buttonText={article.buttonText1}
-            buttonUrl={'/'}
             index={index}
             imgPosition={index % 2 === 0 && 'left'}
           />

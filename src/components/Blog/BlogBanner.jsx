@@ -2,16 +2,7 @@ import { Button } from '../shared/Button';
 import './BlogBanner.css';
 import { imgsMap } from '../../pages/Blog/imgConfig';
 
-export const BlogBanner = ({
-  buttonText,
-  buttonUrl,
-  imgSrc,
-  alt,
-  title,
-  paragraph,
-  imgPosition,
-  index,
-}) => {
+export const BlogBanner = ({ alt, title, paragraph, imgPosition, index }) => {
   return (
     <div className="banner">
       <img
@@ -23,7 +14,7 @@ export const BlogBanner = ({
         <h1 className="banner-title">{title}</h1>
         <p className="paragraph">{paragraph}</p>
         <div className="banner-button">
-          <Button text={buttonText} url={`/blog/${index + 1}`} />
+          <Button text="Číst více" url={`/blog/${index + 1}`} />
         </div>
       </div>
     </div>
