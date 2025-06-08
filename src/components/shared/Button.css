@@ -1,14 +1,11 @@
 .btn {
-  border: 1px solid #0808b4;
-  border-radius: 8px;
-  background-color: #0808b4;
-  color: #f9f9f9;
+  border: 1px solid var(--text);
+  background-color: var(--button-white);
+  color: var(--text);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   font-family: 'Open Sans', sans-serif;
-  box-shadow: 0 0 8px #0808b4;
-  padding: 0.5rem 1.5rem;
-
+  padding: 0.5rem 4rem;
 }
