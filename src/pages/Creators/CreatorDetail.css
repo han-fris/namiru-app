@@ -10,14 +10,14 @@
 
 .profile-header {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .profile-photo img {
-  width: 180px;
-  height: 180px;
+  width: 100%;
+  height: 350px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -43,8 +43,9 @@
 }
 
 section h3 {
-  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
   font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .tag-list {
@@ -77,5 +78,15 @@ section h3 {
 @media(min-width: 800px) {
   .creator {
     width: 80%;
+  }
+
+  .profile-header {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .profile-photo img {
+    width: 400px;
+    height: 550px;
   }
 }

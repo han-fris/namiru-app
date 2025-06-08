@@ -1,8 +1,9 @@
+import { FilterForm } from './FilterForm';
 import { FilterOption } from './FilterOption';
 import { FilterCategory } from './FilterCategory';
 import { filterCategories } from '../../config';
 import { useFilters } from '../../hooks/useFilters';
-import './FilterOption.css'
+import './FilterOption.css';
 
 export const Filters = () => {
   const [filters, setFilters] = useFilters();
@@ -19,7 +20,11 @@ export const Filters = () => {
   const filtersObj = Object.fromEntries(filters);
 
   return (
-    <form onChange={changeHandler} className='filters__form'>
+    <FilterForm
+      submitOnChange={true}
+      onSubmit={changeHandler}
+      className="filters__form"
+    >
       {filterCategories.map((category) => (
         <FilterCategory key={category.name} label={category.label}>
           {Object.entries(category.options).map(([value, label]) => (
@@ -33,6 +38,6 @@ export const Filters = () => {
           ))}
         </FilterCategory>
       ))}
-    </form>
+    </FilterForm>
   );
 };
