@@ -2,6 +2,7 @@ import { PageWrapper } from '../../components/shared/PageWrapper';
 import { BlogBanner } from '../../components/Blog/BlogBanner';
 import { useEffect, useState } from 'react';
 import { blogpostSourceUrl } from '../../config';
+import { SkeletonBanner } from '../../components/Blog/SkeletonBanner';
 
 export const BlogList = () => {
   const [blogArticles, setBlogArticles] = useState([]);
@@ -25,7 +26,7 @@ export const BlogList = () => {
 
   return (
     <PageWrapper>
-      {loading && <p>Loading...</p>}
+      {loading && <SkeletonBanner bannerCount={3} />}
       {blogArticles?.length > 0 &&
         blogArticles.map((article, index) => (
           <BlogBanner
