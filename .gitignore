@@ -2,7 +2,7 @@
 #package-lock.json
 
 # Vercel
-.vercel/
+.vercel
 
 # Logs
 logs

@@ -2,6 +2,15 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import vercel from 'vite-plugin-vercel';
 
+const vercelConfig = {
+  rewrites: [
+    {
+      source: '/(.*)',
+      destination: '/index.html',
+    },
+  ],
+};
+
 export default defineConfig({
   server: {
     hmr: false,
@@ -12,5 +21,5 @@ export default defineConfig({
       resolveDependencies: false,
     },
   },
-  plugins: [react(), vercel()],
+  plugins: [react(), vercel(vercelConfig)],
 });
