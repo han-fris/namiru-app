@@ -1,0 +1,44 @@
+.filter-option__input {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.filter-option__label {
+  display: inline-block;
+  border: 1px solid currentcolor;
+  color: var(--text);
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.filter-option__label:has(input[type=checkbox]:checked) {
+  background: var(--darker);
+  color: var(--lighter);
+  border-color: currentColor;
+}
+
+.filter-option__label:has(input[type=checkbox]:not(:checked)):hover {
+  opacity: 0.5;
+}
+
+.filter-option__label:has(input[type=checkbox]:focus-visible) {
+  opacity: 0.5;
+}
+
+
+.filter-category__summary {
+  border: 1px solid currentcolor;
+  color: var(--text);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.filters__form {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
