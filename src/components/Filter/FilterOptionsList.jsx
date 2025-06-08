@@ -5,8 +5,6 @@ import { FilterOption } from './FilterOption';
 export const FilterOptionsList = ({ name }) => {
   const filterOption = filtersByCategoryName[name];
 
-  console.log(filterOption);
-
   return (
     <div className="filter-category__details">
       {Object.entries(filterOption.options).map(([value, label]) => (
