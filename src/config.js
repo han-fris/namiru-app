@@ -5,13 +5,13 @@ export const creatorsSourceUrl =
 export const blogpostSourceUrl =
   'https://script.google.com/macros/s/AKfycbzJzpW-l-ZVTME7wGhwqfd0QsPe3BLn5jBNlQ3RLtHxABBO51CIUV93IT8nHNfxXgg/exec';
 
-const creatorTypes = {
+export const creatorTypes = {
   1: 'Švadlena, krejčí',
   2: 'Krejčovská dílna',
   3: 'Oděvní designér',
 };
 
-const specializations = {
+export const specializations = {
   1: 'Úpravy oděvů',
   2: 'Opravy oděvů',
   3: 'Redesign / upcycling',
@@ -36,7 +36,7 @@ const regions = {
   14: 'Moravskoslezský kraj',
 };
 
-const clothingTypes = {
+export const clothingTypes = {
   1: 'Společenské šaty (plesové, večerní, svatební)',
   2: 'Denní a volnočasové oděvy (sukně, halenky, kalhoty, šaty)',
   3: 'Business / Formální oblečení (kostýmy, saka, košile)',
@@ -46,7 +46,7 @@ const clothingTypes = {
   7: 'Kabáty, bundy',
 };
 
-const targetCustomers = {
+export const targetCustomers = {
   1: 'Dámské',
   2: 'Pánské',
   3: 'Dětské',
@@ -57,7 +57,7 @@ const targetCustomers = {
   8: 'Oděv pro hendikepované',
 };
 
-const materials = {
+export const materials = {
   1: 'Jemné, splývavé materiály',
   2: 'Středně těžké a pevné materiály',
   3: 'Těžké materiály',
@@ -67,7 +67,7 @@ const materials = {
   7: 'Kůže / Koženka',
 };
 
-const styles = {
+export const styles = {
   1: 'Moderní / Minimalistický',
   2: 'Elegantní / Formální',
   3: 'Ležérní / Casual',

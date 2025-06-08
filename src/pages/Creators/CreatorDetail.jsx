@@ -1,7 +1,13 @@
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
-import { creatorsSourceUrl } from '../../config';
+import {
+  creatorsSourceUrl,
+  specializations,
+  materials,
+  targetCustomers,
+  clothingTypes,
+} from '../../config';
 import './CreatorDetail.css';
 
 export const CreatorDetail = () => {
@@ -9,6 +15,22 @@ export const CreatorDetail = () => {
   const [creator, setCreator] = useState({});
 
   const [loading, setLoading] = useState(true);
+
+  const selectedSpecializations = Object.keys(creator?.specialization || {})
+    .filter((key) => creator?.specialization[key])
+    .map((key) => specializations[key]);
+
+  const selectedMaterials = Object.keys(creator?.materials || {})
+    .filter((key) => creator?.materials[key])
+    .map((key) => materials[key]);
+
+  const selectedTargetCustomers = Object.keys(creator?.targetCustomers || {})
+    .filter((key) => creator?.targetCustomers[key])
+    .map((key) => targetCustomers[key]);
+
+  const selectedCloghingTypes = Object.keys(creator?.clothingTypes || {})
+    .filter((key) => creator?.clothingTypes[key])
+    .map((key) => clothingTypes[key]);
 
   useEffect(() => {
     const loadCreator = async () => {
@@ -98,17 +120,59 @@ export const CreatorDetail = () => {
                   {creator.accessibility}
                 </p>
                 <p>
-                  <strong>Komunikace:</strong> {creator.communication}
-                </p>
-                <p>
                   <strong>Jazyky:</strong> {creator.languages_text}
                 </p>
               </section>
 
-              {/* {<section className="tags">
-                <h2>Služby & specializace</h2>
-                <div className="tag-list">{}</div>
-              </section>} */}
+              {selectedMaterials.length > 0 && (
+                <section>
+                  <h3>Materiály</h3>
+                  <ul className="tag-list">
+                    {selectedMaterials.map((s) => (
+                      <li className="tag" key={s}>
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+              {selectedTargetCustomers.length > 0 && (
+                <section>
+                  <h3>Zaměření</h3>
+                  <ul className="tag-list">
+                    {selectedTargetCustomers.map((s) => (
+                      <li className="tag" key={s}>
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
+              {selectedSpecializations.length > 0 && (
+                <section>
+                  <h3>Služby & specializace</h3>
+                  <ul className="tag-list">
+                    {selectedSpecializations.map((s) => (
+                      <li className="tag" key={s}>
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+              {selectedCloghingTypes.length > 0 && (
+                <section>
+                  <h3>Druhy oděvů</h3>
+                  <ul className="tag-list">
+                    {selectedCloghingTypes.map((s) => (
+                      <li className="tag" key={s}>
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
 
               <section className="pricing">
                 <h2>Cenové rozmezí</h2>
