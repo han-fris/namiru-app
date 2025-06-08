@@ -1,4 +1,3 @@
-import '../../global.css';
 import { CreatorCard } from '../../components/CreatorsCards/CreatorCard';
 import { CreatorsCardsList } from '../../components/CreatorsCards/CreatorsCardsList';
 import { Filters } from '../../components/Filter/Filters';

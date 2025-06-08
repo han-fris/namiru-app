@@ -7,8 +7,6 @@ import { CreatorDetail } from './pages/Creators/CreatorDetail';
 import { CreatorList } from './pages/Creators/CreatorsList';
 import { NotFound } from './pages/NotFound';
 
-import './global.css';
-
 const router = createBrowserRouter([
   {
     path: '/',

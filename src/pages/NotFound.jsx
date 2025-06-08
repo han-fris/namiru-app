@@ -1,4 +1,3 @@
-import './../global.css';
 import { PageWrapper } from '../components/shared/PageWrapper';
 
 export const NotFound = () => {
