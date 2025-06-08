@@ -1,11 +1,12 @@
-// https://docs.google.com/spreadsheets/d/1Ev1swB-zamqmO4Htush-wRefSX8TuUjC6uNgdM-Llp0/edit?usp=sharing
-export const creatorsSourceUrl =
-  'https://script.google.com/macros/s/AKfycbyd-W_HSWBAf0cJAUOyWPe9EJ_f18FQ0WIx8k3It8jsbUvReVzU5WN1DlT5AC6eimjN/exec';
+import { apiUrls } from '../global.config.js';
 
-export const blogpostSourceUrl =
-  'https://script.google.com/macros/s/AKfycbzJzpW-l-ZVTME7wGhwqfd0QsPe3BLn5jBNlQ3RLtHxABBO51CIUV93IT8nHNfxXgg/exec';
+const useApi = import.meta.env?.VITE_VERCEL_ENV;
 
-export const creatorTypes = {
+console.log({ useApi });
+export const creatorsSourceUrl = useApi ? '/api/creators' : apiUrls.creators;
+export const blogpostSourceUrl = useApi ? '/api/blogposts' : apiUrls.blogposts;
+
+const creatorTypes = {
   1: 'Švadlena, krejčí',
   2: 'Krejčovská dílna',
   3: 'Oděvní designér',
