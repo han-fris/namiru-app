@@ -7,7 +7,7 @@ export const Footer = () => {
       <Link to="/" className="navigation-main">
         Namiru
       </Link>
-      <div>
+      <div className="navigation-lower">
         <Link to="/blog" className="navigation-item">
           Blog
         </Link>

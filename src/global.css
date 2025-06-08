@@ -121,6 +121,10 @@ footer {
   width: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+a {
+  color: var(--text-navigation)
 }
