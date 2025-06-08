@@ -1,9 +1,12 @@
-// https://docs.google.com/spreadsheets/d/1Ev1swB-zamqmO4Htush-wRefSX8TuUjC6uNgdM-Llp0/edit?usp=sharing
-export const creatorsSourceUrl = '/api/creators';
+import { apiUrls } from '../global.config.js';
 
-export const blogpostSourceUrl = '/api/blogposts';
+const useApi = import.meta.env?.VITE_VERCEL_ENV;
 
-export const creatorTypes = {
+console.log({ useApi });
+export const creatorsSourceUrl = useApi ? '/api/creators' : apiUrls.creators;
+export const blogpostSourceUrl = useApi ? '/api/blogposts' : apiUrls.blogposts;
+
+const creatorTypes = {
   1: 'Švadlena, krejčí',
   2: 'Krejčovská dílna',
   3: 'Oděvní designér',
