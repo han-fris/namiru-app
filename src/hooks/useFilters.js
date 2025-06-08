@@ -1,13 +1,13 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useSearchParams } from 'react-router';
-import { filters } from '../config';
+import { filterCategories } from '../config';
 
 function parseSearchParams(searchParams) {
   const newFilters = [];
-  for (const filter of filters) {
-    const filterValue = searchParams.get(filter.name);
+  for (const filterCategory of filterCategories) {
+    const filterValue = searchParams.get(filterCategory.name);
     if (filterValue) {
-      newFilters.push([filter.name, filterValue.split(' ')]);
+      newFilters.push([filterCategory.name, filterValue.split(' ')]);
     }
   }
   return newFilters;
