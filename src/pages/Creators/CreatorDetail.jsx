@@ -62,14 +62,10 @@ export const CreatorDetail = () => {
             <div className="creator">
               <div className="profile-header">
                 <div className="profile-photo">
-                  <div
-                    style={{
-                      width: '240px',
-                      height: '240px',
-                      background: `red`,
-                    }}
+                  <img
+                    src={`https://namiru.vercel.app/creators/${creator?.imgUrl1 ? creator.imgUrl1 : 'fallback.png'}`}
+                    alt={`Foto ${creator.name}`}
                   />
-                  {/*<img src={creator.profile_photo || '/placeholder.jpg'} alt={`Foto ${creator.name}`}/>*/}
                 </div>
                 <div className="profile-info">
                   <p className="label">Představuje se</p>
@@ -101,6 +97,55 @@ export const CreatorDetail = () => {
                       </a>
                     )}
                   </div>
+                  {selectedMaterials.length > 0 && (
+                    <section>
+                      <h3>Materiály</h3>
+                      <ul className="tag-list">
+                        {selectedMaterials.map((s) => (
+                          <li className="tag" key={s}>
+                            {s}
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  )}
+                  {selectedTargetCustomers.length > 0 && (
+                    <section>
+                      <h3>Zaměření</h3>
+                      <ul className="tag-list">
+                        {selectedTargetCustomers.map((s) => (
+                          <li className="tag" key={s}>
+                            {s}
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  )}
+
+                  {selectedSpecializations.length > 0 && (
+                    <section>
+                      <h3>Služby & specializace</h3>
+                      <ul className="tag-list">
+                        {selectedSpecializations.map((s) => (
+                          <li className="tag" key={s}>
+                            {s}
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  )}
+                  {selectedCloghingTypes.length > 0 && (
+                    <section>
+                      <h3>Druhy oděvů</h3>
+                      <ul className="tag-list">
+                        {selectedCloghingTypes.map((s) => (
+                          <li className="tag" key={s}>
+                            {s}
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  )}
                 </div>
               </div>
 
@@ -123,56 +168,6 @@ export const CreatorDetail = () => {
                   <strong>Jazyky:</strong> {creator.languages_text}
                 </p>
               </section>
-
-              {selectedMaterials.length > 0 && (
-                <section>
-                  <h3>Materiály</h3>
-                  <ul className="tag-list">
-                    {selectedMaterials.map((s) => (
-                      <li className="tag" key={s}>
-                        {s}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-              )}
-              {selectedTargetCustomers.length > 0 && (
-                <section>
-                  <h3>Zaměření</h3>
-                  <ul className="tag-list">
-                    {selectedTargetCustomers.map((s) => (
-                      <li className="tag" key={s}>
-                        {s}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-              )}
-
-              {selectedSpecializations.length > 0 && (
-                <section>
-                  <h3>Služby & specializace</h3>
-                  <ul className="tag-list">
-                    {selectedSpecializations.map((s) => (
-                      <li className="tag" key={s}>
-                        {s}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-              )}
-              {selectedCloghingTypes.length > 0 && (
-                <section>
-                  <h3>Druhy oděvů</h3>
-                  <ul className="tag-list">
-                    {selectedCloghingTypes.map((s) => (
-                      <li className="tag" key={s}>
-                        {s}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-              )}
 
               <section className="pricing">
                 <h2>Cenové rozmezí</h2>
