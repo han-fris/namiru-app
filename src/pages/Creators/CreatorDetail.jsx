@@ -29,7 +29,7 @@ export const CreatorDetail = () => {
 
   return (
     <PageWrapper>
-      <h1>detail tvůrce: {creator.name}</h1>
+      <h1>{creator.name}</h1>
     </PageWrapper>
   );
 };
