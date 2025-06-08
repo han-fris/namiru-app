@@ -1,20 +1,33 @@
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   font-size: 1rem;
+  color: var(--text);
 
   div {
     display: flex;
     justify-content: space-between;
     width: 100%;
     text-decoration: none;
+  }
 
+  a {
+    color: var(--dark);
   }
 }
 
 .navigation-main {
   text-decoration: none;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
-/* @media (min-width: 800px) {} */
+.navigation-lower {
+  margin: 1rem 0;
+  font-weight: 200;
+}
+
+
+@media (min-width: 800px) {
+  footer {
+    font-size: 2rem;
+  }
+}
