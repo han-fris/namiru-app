@@ -1,0 +1,12 @@
+.banner-section {
+  background-color: brown;
+  width: 100%;
+  padding: 0;
+}
+
+
+@media (min-width: 800px) {
+  .banner-section {
+    padding: 3rem 0;
+  }
+}
