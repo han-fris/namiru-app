@@ -5,37 +5,6 @@ export const creatorsSourceUrl =
 export const blogpostSourceUrl =
   'https://script.google.com/macros/s/AKfycbzJzpW-l-ZVTME7wGhwqfd0QsPe3BLn5jBNlQ3RLtHxABBO51CIUV93IT8nHNfxXgg/exec';
 
-export const filters = [
-  {
-    name: 'specialization',
-    label: 'Zaměření',
-  },
-  {
-    name: 'targetCustomers',
-    label: 'Typ zákazníka',
-  },
-  {
-    name: 'clothingType',
-    label: 'Druh oděvu',
-  },
-  {
-    name: 'style',
-    label: 'Styl',
-  },
-  {
-    name: 'material',
-    label: 'Materiál',
-  },
-  {
-    name: 'creatorType',
-    label: 'Typ tvůrce',
-  },
-  {
-    name: 'region',
-    label: 'Region',
-  },
-];
-
 const creatorTypeKeywords = {
   1: 'švadlena',
   2: 'dílna',
