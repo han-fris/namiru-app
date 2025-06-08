@@ -1,15 +1,41 @@
 .hero {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   position: relative;
   padding-bottom: 2.5em;
-  margin: 8rem 0;
-  gap: 1rem;
+  margin-left: 5%;
+  gap: 2rem;
 }
 
+/* desktop */
+
 @media (min-width: 800px) {
+  .hero {
+    flex-direction: row;
+    background-position: center;
+  }
+
   .hero-text {
     max-width: 70%;
   }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+.hero-img {
+  background-image: url('../../../public/img/studio-fitting.jpg');
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-position: right;
 }

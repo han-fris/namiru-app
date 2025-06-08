@@ -1,4 +1,3 @@
-import '../../global.css';
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router';

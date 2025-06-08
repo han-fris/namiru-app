@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import './Header.css';
 
 export const Header = () => {
   return (
@@ -6,7 +7,9 @@ export const Header = () => {
       <Link to={'/'} className="brand">
         Namiru
       </Link>
-      <p className="navigation-item">Blog</p>
+      <Link to={'/blog'} className="navigation-item">
+        Blog
+      </Link>
     </header>
   );
 };
