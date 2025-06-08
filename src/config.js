@@ -1,9 +1,10 @@
-// https://docs.google.com/spreadsheets/d/1Ev1swB-zamqmO4Htush-wRefSX8TuUjC6uNgdM-Llp0/edit?usp=sharing
-export const creatorsSourceUrl =
-  'https://script.google.com/macros/s/AKfycbyd-W_HSWBAf0cJAUOyWPe9EJ_f18FQ0WIx8k3It8jsbUvReVzU5WN1DlT5AC6eimjN/exec';
+import { apiUrls } from '../global.config.js';
 
-export const blogpostSourceUrl =
-  'https://script.google.com/macros/s/AKfycbzJzpW-l-ZVTME7wGhwqfd0QsPe3BLn5jBNlQ3RLtHxABBO51CIUV93IT8nHNfxXgg/exec';
+const useApi = import.meta.env?.VITE_VERCEL_ENV;
+
+console.log({ useApi });
+export const creatorsSourceUrl = useApi ? '/api/creators' : apiUrls.creators;
+export const blogpostSourceUrl = useApi ? '/api/blogposts' : apiUrls.blogposts;
 
 const creatorTypes = {
   1: 'Švadlena, krejčí',
@@ -11,7 +12,7 @@ const creatorTypes = {
   3: 'Oděvní designér',
 };
 
-const specializations = {
+export const specializations = {
   1: 'Úpravy oděvů',
   2: 'Opravy oděvů',
   3: 'Redesign / upcycling',
@@ -36,7 +37,7 @@ const regions = {
   14: 'Moravskoslezský kraj',
 };
 
-const clothingTypes = {
+export const clothingTypes = {
   1: 'Společenské šaty (plesové, večerní, svatební)',
   2: 'Denní a volnočasové oděvy (sukně, halenky, kalhoty, šaty)',
   3: 'Business / Formální oblečení (kostýmy, saka, košile)',
@@ -46,7 +47,7 @@ const clothingTypes = {
   7: 'Kabáty, bundy',
 };
 
-const targetCustomers = {
+export const targetCustomers = {
   1: 'Dámské',
   2: 'Pánské',
   3: 'Dětské',
@@ -57,7 +58,7 @@ const targetCustomers = {
   8: 'Oděv pro hendikepované',
 };
 
-const materials = {
+export const materials = {
   1: 'Jemné, splývavé materiály',
   2: 'Středně těžké a pevné materiály',
   3: 'Těžké materiály',
@@ -67,7 +68,7 @@ const materials = {
   7: 'Kůže / Koženka',
 };
 
-const styles = {
+export const styles = {
   1: 'Moderní / Minimalistický',
   2: 'Elegantní / Formální',
   3: 'Ležérní / Casual',
