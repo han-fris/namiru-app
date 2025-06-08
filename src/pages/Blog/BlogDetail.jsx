@@ -2,7 +2,7 @@ import { useParams } from 'react-router';
 import { useState, useEffect } from 'react';
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { blogpostSourceUrl } from '../../config';
-import img1 from '../../../public/img/trans1.jpg';
+import { imgsMap } from '../../pages/Blog/imgConfig';
 
 export const BlogDetail = () => {
   const { id } = useParams();
@@ -36,7 +36,7 @@ export const BlogDetail = () => {
           ) : (
             <>
               <div className="blog-img">
-                <img className="blog-img" src={img1} alt="image" />
+                <img className="blog-img" src={imgsMap[id - 1]} alt="image" />
               </div>
               <h1>{article.nadpis}</h1>
               <p className="paragraph1">{article.paragraf1}</p>
