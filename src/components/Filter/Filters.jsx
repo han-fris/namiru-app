@@ -1,10 +1,13 @@
 import { FilterOption } from './FilterOption';
 import { FilterCategory } from './FilterCategory';
-import { useSearchParams } from 'react-router';
 import { filterCategories } from '../../config';
+import { useFilters } from '../../hooks/useFilters';
+
+const doNothing = () => {};
 
 export const Filters = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [filters, setFilters] = useFilters();
+
   const changeHandler = (e) => {
     const formData = new FormData(e.currentTarget);
     const newSearchParams = {};
@@ -12,12 +15,9 @@ export const Filters = () => {
       newSearchParams[key] ??= [];
       newSearchParams[key].push(value);
     }
-    const stringifiedSearchParams = new URLSearchParams();
-    for (const key in newSearchParams) {
-      stringifiedSearchParams.set(key, newSearchParams[key].join(' '));
-    }
-    setSearchParams(stringifiedSearchParams);
+    setFilters(newSearchParams);
   };
+  const filtersObj = Object.fromEntries(filters);
 
   return (
     <form onChange={changeHandler}>
@@ -29,6 +29,8 @@ export const Filters = () => {
               label={label}
               name={category.name}
               value={value}
+              isChecked={filtersObj[category.name]?.includes(value)}
+              onChange={doNothing}
             />
           ))}
         </FilterCategory>

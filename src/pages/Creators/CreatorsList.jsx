@@ -2,8 +2,6 @@ import { CreatorCard } from '../../components/CreatorsCards/CreatorCard';
 import { CreatorsCardsList } from '../../components/CreatorsCards/CreatorsCardsList';
 import { Filters } from '../../components/Filter/Filters';
 import { PageWrapper } from '../../components/shared/PageWrapper';
-import { creatorsSourceUrl } from '../../config';
-import { useState, useEffect } from 'react';
 import { useFilteredCreators } from '../../hooks/useFilteredCreators';
 
 export const CreatorList = () => {
