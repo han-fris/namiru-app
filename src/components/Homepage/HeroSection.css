@@ -15,9 +15,8 @@
   gap: 2rem;
 }
 
-
 .hero-img {
-  background-image: url('../../../public/img/studio-fitting.jpg');
+  background-image: url('../../img/studio-fitting.jpg');
   width: 100%;
   height: 240px;
   background-size: cover;
