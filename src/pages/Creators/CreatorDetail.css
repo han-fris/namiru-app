@@ -1,0 +1,67 @@
+.creator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem 5%;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.profile-header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.profile-info .label {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 0.25rem;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.profile-info p {
+  margin: 0.25rem 0;
+}
+
+.contact-icons a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.95rem;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+section h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: #eee;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+}
