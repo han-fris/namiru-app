@@ -6,6 +6,7 @@ import { BlogList } from './pages/Blog/BlogList';
 import { CreatorDetail } from './pages/Creators/CreatorDetail';
 import { CreatorList } from './pages/Creators/CreatorsList';
 import { NotFound } from './pages/NotFound';
+import { Guide } from './pages/Guide/Guide';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: '/tvurce/:id',
     element: <CreatorDetail />,
+  },
+  {
+    path: '/pruvodce',
+    element: <Guide />,
   },
   {
     path: '*',
