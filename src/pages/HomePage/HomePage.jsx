@@ -4,6 +4,7 @@ import { PageWrapper } from '../../components/shared/PageWrapper';
 import { useEffect, useState } from 'react';
 import { BlogBanner } from '../../components/Blog/BlogBanner';
 import { blogpostSourceUrl } from '../../config';
+import { SkeletonBanner } from '../../components/Blog/SkeletonBanner';
 
 export const HomePage = () => {
   const [blogArticles, setBlogArticles] = useState([]);
@@ -30,6 +31,7 @@ export const HomePage = () => {
   return (
     <PageWrapper>
       <HeroSection />
+      {loading && <SkeletonBanner bannerCount={2} />}
       {firstArticle && (
         <BlogBanner
           title={firstArticle.nadpis}
