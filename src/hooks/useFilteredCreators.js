@@ -2,6 +2,59 @@ import { useState, useEffect } from 'react';
 import { creatorsSourceUrl } from '../config';
 import { useFilters } from './useFilters';
 
+const exclusiveFilters = {
+  region: true,
+  creatorType: true,
+};
+
+function filterAndSortCreators(allCreators, filters) {
+  if (!filters || !filters.length) {
+    return allCreators;
+  }
+
+  const scores = {};
+  const filteredCreators = allCreators.filter((creator) => {
+    // filters = [['region', [1, 2]], ['creatorType', [1]]]
+    let creatorScore = 0;
+    const allFiltersMatched = filters.every(([filterKey, filterValues]) => {
+      if (exclusiveFilters[filterKey]) {
+        // creator.region = {1: false, 2: true}
+        // filters.region = [1, 2]
+        let anyFilterMatched = false;
+        for (const filterValue of filterValues) {
+          if (creator[filterKey][filterValue]) {
+            anyFilterMatched = true;
+            break;
+          }
+        }
+        if (!anyFilterMatched) {
+          return false; // Tvrdy filtr - pokud nematchne, tvurce uplne vynechame
+        }
+        return true;
+      }
+
+      let currentFilterHits = 0;
+      // return filterValues.some((value) => creator[filterKey][value]);
+      for (const filterValue of filterValues) {
+        if (creator[filterKey][filterValue]) {
+          currentFilterHits++;
+        }
+      }
+      if (currentFilterHits > 0) {
+        creatorScore += currentFilterHits;
+        return true;
+      }
+      return false;
+    });
+    scores[creator.id] = creatorScore;
+    return allFiltersMatched;
+  });
+  filteredCreators.sort((a, b) => {
+    return scores[b.id] - scores[a.id];
+  });
+  return filteredCreators;
+}
+
 export const useFilteredCreators = () => {
   const [allCreators, setAllCreators] = useState(null);
   const [filteredCreators, setFilteredCreators] = useState([]);
@@ -28,29 +81,7 @@ export const useFilteredCreators = () => {
       return;
     }
 
-    const result = [];
-    const ranking = {};
-    for (const creator of allCreators) {
-      let hits = 0;
-      for (const [filterKey, filterValues] of filters) {
-        console.log(filterKey, filterValues);
-        for (const filterValue of filterValues) {
-          console.log({ creator, filterKey, filterValue });
-          if (creator[filterKey][filterValue]) {
-            hits++;
-          }
-        }
-      }
-      if (hits) {
-        result.push(creator);
-        ranking[creator.id] = hits;
-      } else {
-        ranking[creator.id] = 0;
-      }
-    }
-    result.sort((a, b) => {
-      return ranking[b.id] - ranking[a.id];
-    });
+    const result = filterAndSortCreators(allCreators, filters);
     setFilteredCreators(result);
   }, [allCreators, filters]);
 

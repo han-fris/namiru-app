@@ -20,7 +20,6 @@ export const CreatorList = () => {
             creator={creator}
             key={creator.id}
             name={creator.name}
-            region={creator.region_text}
           />
         ))}
       </CreatorsCardsList>
