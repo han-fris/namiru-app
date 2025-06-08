@@ -16,7 +16,11 @@ export const Filters = () => {
       className="filters__form"
     >
       {filterCategories.map((category) => (
-        <FilterCategory key={category.name} label={category.label}>
+        <FilterCategory
+          open={category.name in filtersObj}
+          key={category.name}
+          label={category.label}
+        >
           {Object.entries(category.options).map(([value, label]) => (
             <FilterOption
               key={value}

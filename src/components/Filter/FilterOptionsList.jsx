@@ -8,7 +8,7 @@ export const FilterOptionsList = ({ name }) => {
   return (
     <div className="filter-category__details">
       {Object.entries(filterOption.options).map(([value, label]) => (
-        <FilterOption key={value} label={label} value={value} />
+        <FilterOption key={value} label={label} value={value} name={name} />
       ))}
     </div>
   );

@@ -118,7 +118,7 @@ export const Guide = () => {
                 <FilterOptionsList name="style"></FilterOptionsList>
               </div>
             </section>
-            <button type="submit">Ukázat tvůrce</button>
+            <button className="guide__button" type="submit">Ukázat tvůrce</button>
           </FilterForm>
         </div>
       </div>
