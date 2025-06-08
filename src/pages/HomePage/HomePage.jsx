@@ -37,20 +37,16 @@ export const HomePage = () => {
           <BlogBanner
             title={firstArticle.nadpis}
             paragraph={firstArticle.paragraf1}
-            buttonText={firstArticle.buttonText1}
-            buttonUrl={'/'}
             index={0}
-            imgPosition={'left'}
+            imgPosition="left"
           />
         )}
         {lastArticle && (
           <BlogBanner
             title={lastArticle.nadpis}
             paragraph={lastArticle.paragraf1}
-            buttonText={lastArticle.buttonText1}
-            buttonUrl={'/'}
             index={blogArticles.length - 1}
-            imgPosition={'right'}
+            imgPosition="right"
           />
         )}
       </div>
