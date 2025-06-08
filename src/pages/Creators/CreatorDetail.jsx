@@ -79,7 +79,7 @@ export const CreatorDetail = () => {
                     {creator.city}, {creator.region_text}
                   </p>
 
-                  <div className="contact-icons">
+                  <div className="contact-links">
                     <a href={`mailto:${creator.email}`}>Email</a>
                     <a href={`tel:${creator.phone}`}>Telefon</a>
                     {creator.website && (
