@@ -54,6 +54,9 @@ export const HomePage = () => {
           />
         )}
       </div>
+      <div className="quote-section">
+        <h3>Váš styl, vaše míry, váš tvůrce</h3>
+      </div>
     </PageWrapper>
   );
 };

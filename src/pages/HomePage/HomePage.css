@@ -8,6 +8,17 @@
   }
 }
 
+.quote-section {
+  background-color: var(--text);
+  padding: 3rem 5%;
+  width: 100%;
+  text-align: center;
+
+  h3 {
+    font-size: 1.5rem;
+    color: var(--background-lighter);
+  }
+}
 
 @media (min-width: 800px) {
   .banner-section {
@@ -15,6 +26,12 @@
 
     .blog-banner-skeleton {
       margin: 3rem 0;
+    }
+  }
+
+  .quote-section {
+    h3 {
+      font-size: 2rem;
     }
   }
 }
