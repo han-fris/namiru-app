@@ -7,22 +7,12 @@ import './FilterOption.css';
 
 export const Filters = () => {
   const [filters, setFilters] = useFilters();
-
-  const changeHandler = (e) => {
-    const formData = new FormData(e.currentTarget);
-    const newSearchParams = {};
-    for (const [key, value] of formData.entries()) {
-      newSearchParams[key] ??= [];
-      newSearchParams[key].push(value);
-    }
-    setFilters(newSearchParams);
-  };
   const filtersObj = Object.fromEntries(filters);
 
   return (
     <FilterForm
       submitOnChange={true}
-      onSubmit={changeHandler}
+      onSubmit={setFilters}
       className="filters__form"
     >
       {filterCategories.map((category) => (
