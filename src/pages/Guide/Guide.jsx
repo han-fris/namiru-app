@@ -2,6 +2,7 @@ import './Guide.css';
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { FilterOptionsList } from '../../components/Filter/FilterOptionsList';
 import { GuidePanel } from './GuidePanel';
+import { FilterForm } from '../../components/Filter/FilterForm';
 
 export const Guide = () => {
   return (
@@ -9,7 +10,7 @@ export const Guide = () => {
       <div className="guide">
         <div className="guide-container">
           <h1 className="guide-title">Průvodce</h1>
-          <form>
+          <FilterForm action="/tvurci">
             <section id="creator-types" className="guide-section">
               <div className="guide-section-inner">
                 <h2 className="guide-category-title">Typ tvůrce</h2>
@@ -19,7 +20,6 @@ export const Guide = () => {
                   rukávy, upravit siluetu, nebo přišít nové knoflíky, šikovné
                   švadleny vám pomohou doladit co máte tak rádi tak, aby vám to
                   vydrželo co nejdéle a cítili jste se lépe.
-                  
                 </p>
               </div>
               <div className="guide-filters">
@@ -118,7 +118,8 @@ export const Guide = () => {
                 <FilterOptionsList name="style"></FilterOptionsList>
               </div>
             </section>
-          </form>
+            <button type="submit">Ukázat tvůrce</button>
+          </FilterForm>
         </div>
       </div>
     </PageWrapper>

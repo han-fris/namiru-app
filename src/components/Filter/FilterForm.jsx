@@ -9,6 +9,7 @@ export function FilterForm({
   className,
   onSubmit,
   submitOnChange = false,
+  action,
 }) {
   const submitHandler = useCallback(
     (e) => {
@@ -29,8 +30,9 @@ export function FilterForm({
   return (
     <form
       className={className}
+      action={action}
       onSubmit={submitHandler}
-      onChange={submitOnChange && submitOnChangeHandler}
+      onChange={submitOnChange ? submitOnChangeHandler : undefined}
     >
       {children}
     </form>
