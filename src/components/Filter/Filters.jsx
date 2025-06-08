@@ -3,8 +3,6 @@ import { FilterCategory } from './FilterCategory';
 import { filterCategories } from '../../config';
 import { useFilters } from '../../hooks/useFilters';
 
-const doNothing = () => {};
-
 export const Filters = () => {
   const [filters, setFilters] = useFilters();
 
@@ -30,7 +28,6 @@ export const Filters = () => {
               name={category.name}
               value={value}
               isChecked={filtersObj[category.name]?.includes(value)}
-              onChange={doNothing}
             />
           ))}
         </FilterCategory>

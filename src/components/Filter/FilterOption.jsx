@@ -1,12 +1,11 @@
-export const FilterOption = ({ label, name, value, isChecked, onChange }) => {
+export const FilterOption = ({ label, name, value, isChecked }) => {
   return (
     <label>
       <input
         type="checkbox"
         name={name}
         value={value}
-        checked={isChecked ?? false}
-        onChange={onChange}
+        defaultChecked={isChecked ?? false}
       />
       {label}
     </label>

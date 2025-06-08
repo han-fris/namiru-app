@@ -59,7 +59,7 @@ export const useFilteredCreators = () => {
   const [allCreators, setAllCreators] = useState(null);
   const [filteredCreators, setFilteredCreators] = useState([]);
 
-  const [filters] = useFilters(window.location.search);
+  const [filters] = useFilters();
 
   useEffect(() => {
     const uploadCreators = async () => {
