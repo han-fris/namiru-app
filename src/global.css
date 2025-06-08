@@ -7,6 +7,13 @@
   --button-white: white;
   --text: #2B2B2B;
   --text-navigation: #1F06AC;
+
+  --lighter:#D1C6BE;
+  --light: #BD9E89;
+  --darker: #545454;
+  --dark: #2B2B2B;
+  --primary: #1F06AC;
+
 }
 
 *,
