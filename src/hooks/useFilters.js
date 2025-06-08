@@ -14,9 +14,7 @@ function parseSearchParams(searchParams) {
 }
 
 export function useFilters() {
-  const [searchParams, setSearchParams] = useSearchParams(
-    window.location.search
-  );
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const [resultFilters, setResultFilters] = useState(
     parseSearchParams(searchParams)
