@@ -16,6 +16,35 @@
 
 }
 
+/* VARIABILNÍ FONTY
+ZKOPÍROVAT STYL A DOPLNIT PROMĚNNÉ */
+
+/*
+<weight>: Use a value from 200 to 800
+<uniquifier>: Use a unique and descriptive class name
+*/
+/*
+.bricolage-grotesque-<uniquifier> {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+*/
+/*
+     <weight>: Use a value from 100 to 900
+ <uniquifier>: Use a unique and descriptive class name
+*/
+/*
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+    */
+
 *,
 *:before,
 *:after {
@@ -25,11 +54,14 @@
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .container {
-  background-image: radial-gradient(farthest-corner at 60% 65%, var(--background-secondary), var(--background-primary));
+  background-color: var(--light);
   height: 100%;
   min-height: 100vh;
   display: flex;
@@ -52,7 +84,7 @@ h6 {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  color: var(--text-navigation);
+  color: var(--primary);
 }
 
 .brand {
@@ -62,7 +94,7 @@ h6 {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  color: var(--text-navigation);
+  color: var(--text);
   font-size: 4rem;
   text-decoration: none;
 }
