@@ -3,7 +3,7 @@
   width: 100%;
   padding: 0;
 
-  .blog-banner-skeleton {
+  .blog-banner-skeleton-container {
     margin: 0;
   }
 }
@@ -24,7 +24,7 @@
   .banner-section {
     padding: 3rem 0;
 
-    .blog-banner-skeleton {
+    .blog-banner-skeleton-container {
       margin: 3rem 0;
     }
   }
