@@ -1,6 +1,9 @@
 # Ignore the package-lock.json to prevent conflicts when collaborating
 #package-lock.json
 
+# Vercel
+.vercel/
+
 # Logs
 logs
 *.log
