@@ -1,5 +1,4 @@
 import { Button } from '../shared/Button';
-import img1 from './../../../public/img/trans2.jpg';
 import './BlogBanner.css';
 import { imgsMap } from '../../pages/Blog/imgConfig';
 

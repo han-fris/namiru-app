@@ -1,20 +1,25 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import vercel from 'vite-plugin-vercel';
+
+const vercelConfig = {
+  rewrites: [
+    {
+      source: '/(.*)',
+      destination: '/index.html',
+    },
+  ],
+};
 
 export default defineConfig({
-  root: './src',
-  publicDir: '../public',
   server: {
     hmr: false,
   },
   build: {
-    outDir: '../dist',
-    emptyOutDir: true,
     target: 'es2022',
-    inputGlobPatterns: ['src/pages/**/*.html'],
     modulePreload: {
       resolveDependencies: false,
     },
   },
-  plugins: [react()],
+  plugins: [react(), vercel(vercelConfig)],
 });
