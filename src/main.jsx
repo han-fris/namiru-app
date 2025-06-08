@@ -34,6 +34,10 @@ const router = createBrowserRouter([
     element: <Guide />,
   },
   {
+    path: '/o-nas',
+    element: <div />,
+  },
+  {
     path: '*',
     element: <NotFound />,
   },
