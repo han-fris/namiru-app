@@ -19,12 +19,13 @@ export const Guide = () => {
                   rukávy, upravit siluetu, nebo přišít nové knoflíky, šikovné
                   švadleny vám pomohou doladit co máte tak rádi tak, aby vám to
                   vydrželo co nejdéle a cítili jste se lépe.
+                  
                 </p>
               </div>
               <div className="guide-filters">
                 <FilterOptionsList name="creatorType"></FilterOptionsList>
               </div>
-              <GuidePanel id="specializations"></GuidePanel>
+              <GuidePanel id="materials"></GuidePanel>
             </section>
             <section id="specializations" className="guide-section">
               <div className="guide-section-inner">
