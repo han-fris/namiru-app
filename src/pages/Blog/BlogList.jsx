@@ -35,6 +35,7 @@ export const BlogList = () => {
             buttonText={article.buttonText1}
             buttonUrl={'/'}
             index={index}
+            imgPosition={index % 2 === 0 && 'left'}
           />
         ))}
     </PageWrapper>

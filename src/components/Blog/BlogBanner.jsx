@@ -1,6 +1,7 @@
 import { Button } from '../shared/Button';
 import img1 from './../../../public/img/trans2.jpg';
 import './BlogBanner.css';
+import { imgsMap } from '../../pages/Blog/imgConfig';
 
 export const BlogBanner = ({
   buttonText,
@@ -14,9 +15,11 @@ export const BlogBanner = ({
 }) => {
   return (
     <div className="banner">
-      <div className="banner-img">
-        <img src={img1} alt={alt} />
-      </div>
+      <img
+        className={`banner-img ${imgPosition === 'left' ? 'order-left' : 'order-right'} `}
+        src={imgsMap[index]}
+        alt={alt}
+      />
       <div className="banner-content">
         <h1 className="banner-title">{title}</h1>
         <p className="paragraph">{paragraph}</p>
