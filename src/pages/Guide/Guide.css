@@ -1,0 +1,17 @@
+.guide {
+  width: 100%;
+}
+
+.guide-text {
+  max-width: 100%;
+}
+
+@media (min-width: 800px) {
+  .guide {
+    width: 80%;
+  }
+
+  .guide-text {
+    width: 60%;
+  }
+}

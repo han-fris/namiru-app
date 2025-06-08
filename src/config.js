@@ -79,40 +79,42 @@ const styles = {
   9: 'Tradiční / Folklorní',
 };
 
-export const filterCategories = [
-  {
+export const filtersByCategoryName = {
+  creatorType: {
     name: 'creatorType',
     label: 'Typ tvůrce',
     options: creatorTypes,
   },
-  {
+  specialization: {
     name: 'specialization',
     label: 'Zaměření',
     options: specializations,
   },
-  {
+  region: {
     name: 'region',
     label: 'Region',
     options: regions,
   },
-  {
+  clothingType: {
     name: 'clothingType',
     label: 'Druh oděvu',
     options: clothingTypes,
   },
-  {
+  targetCustomers: {
     name: 'targetCustomers',
     label: 'Typ zákazníka',
     options: targetCustomers,
   },
-  {
+  materials: {
     name: 'materials',
     label: 'Materiály',
     options: materials,
   },
-  {
+  style: {
     name: 'style',
     label: 'Styl',
     options: styles,
   },
-];
+};
+
+export const filterCategories = Object.values(filtersByCategoryName);
