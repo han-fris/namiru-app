@@ -4,6 +4,7 @@
 :root {
   --background-primary: #C08E7B;
   --background-secondary: #CDD1D4;
+  --background-lighter: #F1ECE6;
   --button-white: white;
   --text: #2B2B2B;
   --text-navigation: #1F06AC;
@@ -13,6 +14,7 @@
   --darker: #545454;
   --dark: #2B2B2B;
   --primary: #1F06AC;
+
 
 }
 
@@ -61,7 +63,7 @@ html {
 }
 
 .container {
-  background-color: var(--light);
+  background-color: var(--lighter);
   height: 100%;
   min-height: 100vh;
   display: flex;

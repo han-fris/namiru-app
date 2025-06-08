@@ -1,0 +1,20 @@
+.banner-section {
+  background-color: var(--background-lighter);
+  width: 100%;
+  padding: 0;
+
+  .blog-banner-skeleton {
+    margin: 0;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .banner-section {
+    padding: 3rem 0;
+
+    .blog-banner-skeleton {
+      margin: 3rem 0;
+    }
+  }
+}
