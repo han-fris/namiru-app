@@ -5,114 +5,114 @@ export const creatorsSourceUrl =
 export const blogpostSourceUrl =
   'https://script.google.com/macros/s/AKfycbzJzpW-l-ZVTME7wGhwqfd0QsPe3BLn5jBNlQ3RLtHxABBO51CIUV93IT8nHNfxXgg/exec';
 
-const creatorTypeKeywords = {
-  1: 'švadlena',
-  2: 'dílna',
-  3: 'designér',
+const creatorTypes = {
+  1: 'Švadlena, krejčí',
+  2: 'Krejčovská dílna',
+  3: 'Oděvní designér',
 };
 
-const specializationKeywords = {
-  1: 'úpravy',
-  2: 'opravy',
-  3: 'upcycling',
-  4: 'zakázková výroba',
-  5: 'návrhářská činnost',
+const specializations = {
+  1: 'Úpravy oděvů',
+  2: 'Opravy oděvů',
+  3: 'Redesign / upcycling',
+  4: 'Zakázková výroba',
+  5: 'Oděv od designéra na míru',
 };
 
-const regionKeywords = {
-  1: 'praha',
-  2: 'středočeský',
-  3: 'jihočeský',
-  4: 'plzeňský',
-  5: 'karlovarský',
-  6: 'ústecký',
-  7: 'liberecký',
-  8: 'královéhradecký',
-  9: 'pardubický',
-  10: 'vysočina',
-  11: 'jihomoravský',
-  12: 'olomoucký',
-  13: 'zlínský',
-  14: 'moravskoslezský',
+const regions = {
+  1: 'Hlavní město Praha',
+  2: 'Středočeský kraj',
+  3: 'Jihočeský kraj',
+  4: 'Plzeňský kraj',
+  5: 'Karlovarský kraj',
+  6: 'Ústecký kraj',
+  7: 'Liberecký kraj',
+  8: 'Královéhradecký kraj',
+  9: 'Pardubický kraj',
+  10: 'Kraj Vysočina',
+  11: 'Jihomoravský kraj',
+  12: 'Olomoucký kraj',
+  13: 'Zlínský kraj',
+  14: 'Moravskoslezský kraj',
 };
 
-const clothingTypesKeywords = {
-  1: 'společenské',
-  2: 'volnočasové',
-  3: 'business',
-  4: 'obleky',
-  5: 'spodní prádlo',
-  6: 'outdoorové',
-  7: 'kabáty',
+const clothingTypes = {
+  1: 'Společenské šaty (plesové, večerní, svatební)',
+  2: 'Denní a volnočasové oděvy (sukně, halenky, kalhoty, šaty)',
+  3: 'Business / Formální oblečení (kostýmy, saka, košile)',
+  4: 'Obleky a saka na míru',
+  5: 'Spodní prádlo / Plavky',
+  6: 'Outdoorové / Sportovní oblečení',
+  7: 'Kabáty, bundy',
 };
 
-const targetCustomersKeywords = {
-  1: 'dámské',
-  2: 'pánské',
-  3: 'dětské',
-  4: 'unisex',
-  5: 'malé',
-  6: 'velké',
-  7: 'queer',
-  8: 'osoby s hendikepem',
+const targetCustomers = {
+  1: 'Dámské',
+  2: 'Pánské',
+  3: 'Dětské',
+  4: 'Unisex',
+  5: 'Malé velikosti',
+  6: 'Nadměrné velikosti',
+  7: 'LGBTQ+',
+  8: 'Oděv pro hendikepované',
 };
 
-const materialsKeywords = {
-  1: 'jemné',
-  2: 'středně',
-  3: 'kabáty',
-  4: 'pružné',
-  5: 'technické',
-  6: 'náročné',
-  7: 'kůže',
+const materials = {
+  1: 'Jemné, splývavé materiály',
+  2: 'Středně těžké a pevné materiály',
+  3: 'Těžké materiály',
+  4: 'Pružné materiály / Úplety',
+  5: 'Technické / Funkční materiály',
+  6: 'Náročné materiály',
+  7: 'Kůže / Koženka',
 };
 
-const styleKeywords = {
-  1: 'moderní',
-  2: 'elegantní',
-  3: 'casual',
-  4: 'sportovní',
-  5: 'bohémský',
-  6: 'konceptuální',
-  7: 'avantgardní',
-  8: 'vintage',
-  9: 'folklorní',
+const styles = {
+  1: 'Moderní / Minimalistický',
+  2: 'Elegantní / Formální',
+  3: 'Ležérní / Casual',
+  4: 'Sportovní / Funkční',
+  5: 'Přírodní / Bohémský',
+  6: 'Autorský / Konceptuální design',
+  7: 'Avantgardní / Experimentální',
+  8: 'Vintage / Retro',
+  9: 'Tradiční / Folklorní',
 };
 
 export const filterCategories = [
   {
     name: 'creatorType',
     label: 'Typ tvůrce',
-    options: creatorTypeKeywords,
+    options: creatorTypes,
   },
   {
     name: 'specialization',
     label: 'Zaměření',
-    options: specializationKeywords,
+    options: specializations,
   },
   {
     name: 'region',
     label: 'Region',
-    options: regionKeywords,
+    options: regions,
   },
   {
     name: 'clothingType',
     label: 'Druh oděvu',
-    options: clothingTypesKeywords,
+    options: clothingTypes,
   },
   {
     name: 'targetCustomers',
     label: 'Typ zákazníka',
-    options: targetCustomersKeywords,
+    options: targetCustomers,
   },
   {
     name: 'materials',
     label: 'Materiály',
-    options: materialsKeywords,
+    options: materials,
   },
   {
     name: 'style',
     label: 'Styl',
-    options: styleKeywords,
+    options: styles,
   },
 ];
