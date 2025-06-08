@@ -1,3 +1,3 @@
 export const CreatorsCardsList = ({ children }) => {
-  return <>{children}</>;
+  return <div className="creators-cards">{children}</div>;
 };
