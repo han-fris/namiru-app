@@ -121,7 +121,6 @@ export const Guide = () => {
               <div className="guide__filters">
                 <FilterOptionsList name="style"></FilterOptionsList>
               </div>
-              <GuidePanel id="creator-types"></GuidePanel>
             </section>
             <div className="guide__submit">
               <button className="guide__button" type="submit">

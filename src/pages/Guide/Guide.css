@@ -3,12 +3,31 @@
   display: flex;
 }
 
+.guide__title {
+  text-align: center;
+}
+
 .guide__section {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 20px
+}
+
+#creator-types {
+  height: 80vh;
 }
 
 .guide__text {
-  max-width: 100%;
+  width: 90%;
+  margin: 20px;
+}
+
+.guide__filters {
+  text-align: left;
 }
 
 .guide__button {
@@ -18,8 +37,9 @@
   cursor: pointer;
   position: fixed;
   right: 30px;
-  bottom: 30px;
+  bottom: 60px;
 }
+
 
 @media (min-width: 800px) {
   .guide {
