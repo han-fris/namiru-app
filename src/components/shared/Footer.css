@@ -6,7 +6,6 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    text-decoration: none;
   }
 
   a {
@@ -19,12 +18,6 @@ footer {
   font-weight: 400;
 }
 
-.navigation-main:hover,
-.navigation-main:focus,
-.navigation-item:hover,
-.navigation-item:focus {
-  text-decoration: underline;
-}
 
 .navigation-lower {
   margin: 1rem 0;

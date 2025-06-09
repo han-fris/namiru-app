@@ -126,5 +126,11 @@ footer {
 }
 
 a {
-  color: var(--text-navigation)
+  color: var(--text-navigation);
+  transition: transform 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  transform: translateY(-1px);
 }
