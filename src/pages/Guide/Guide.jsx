@@ -9,7 +9,6 @@ export const Guide = () => {
     <PageWrapper>
       <div className="guide">
         <div className="guide__container">
-          <h1 className="guide__title">Průvodce</h1>
           <FilterForm action="/tvurci">
             <section id="creator-types" className="guide__section">
               <div className="guide__section-inner">
