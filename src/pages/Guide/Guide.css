@@ -9,7 +9,7 @@
 
 #creator-types {
   display: flex;
-  flex-grow: 1;
+  height: 90vh;
 }
 
 #specializations,
@@ -30,8 +30,6 @@
 }
 
 
-
-
 .guide__text {
   width: 90%;
   margin: 20px;
@@ -42,13 +40,22 @@
 }
 
 .guide__button {
-  background-color: var(--lighter);
-  padding: 10px;
-  margin: 10px;
+  background-color: var(--darker);
+  color: var(--button-white);
+  border-radius: 50px;
+  border: none;
+  padding: 10px 20px;
   cursor: pointer;
   position: fixed;
-  right: 30px;
-  bottom: 60px;
+  left: calc(50vw - 95px);
+  bottom: 30px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 1.5rem;
 }
 
 #creator-types {
@@ -65,4 +72,5 @@
   .guide__text {
     width: 60%;
   }
+
 }
