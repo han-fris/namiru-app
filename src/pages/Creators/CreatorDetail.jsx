@@ -161,8 +161,7 @@ export const CreatorDetail = () => {
                   {creator.order_processing_time_text}
                 </p>
                 <p>
-                  <strong>Dostupnost pro lidi s hendikepem:</strong>{' '}
-                  {creator.accessibility}
+                  <strong>Bezbariérový přístup:</strong> {creator.accessibility}
                 </p>
                 <p>
                   <strong>Jazyky:</strong> {creator.languages_text}

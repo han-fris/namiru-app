@@ -13,7 +13,7 @@ export const Filters = () => {
     <FilterForm
       submitOnChange={true}
       onSubmit={setFilters}
-      className="filters__form"
+      className="filter__form"
     >
       {filterCategories.map((category) => (
         <FilterCategory
