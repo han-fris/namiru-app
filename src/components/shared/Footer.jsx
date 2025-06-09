@@ -14,8 +14,8 @@ export const Footer = () => {
         <Link to="/tvurci" className="navigation-item">
           Najdi tvůrce
         </Link>
-        <Link to="/o-nas" className="navigation-item">
-          O nás
+        <Link to="/info" className="navigation-item">
+          Info
         </Link>
       </div>
     </footer>

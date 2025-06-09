@@ -7,6 +7,7 @@ import { CreatorDetail } from './pages/Creators/CreatorDetail';
 import { CreatorList } from './pages/Creators/CreatorsList';
 import { NotFound } from './pages/NotFound';
 import { Guide } from './pages/Guide/Guide';
+import { Info } from './pages/Info/Info';
 
 const router = createBrowserRouter([
   {
@@ -34,8 +35,8 @@ const router = createBrowserRouter([
     element: <Guide />,
   },
   {
-    path: '/o-nas',
-    element: <div />,
+    path: '/info',
+    element: <Info />,
   },
   {
     path: '*',
