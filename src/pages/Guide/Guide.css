@@ -6,7 +6,7 @@
   max-width: 100%;
 }
 
-.guide-button {
+.guide__button {
   background-color: var(--lighter);
   padding: 10px;
   margin: 10px
