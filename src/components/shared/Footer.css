@@ -17,7 +17,13 @@ footer {
 .navigation-main {
   text-decoration: none;
   font-weight: 400;
-  font-size: 1.5rem;
+}
+
+.navigation-main:hover,
+.navigation-main:focus,
+.navigation-item:hover,
+.navigation-item:focus {
+  text-decoration: underline;
 }
 
 .navigation-lower {

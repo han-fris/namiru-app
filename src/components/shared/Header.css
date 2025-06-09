@@ -2,3 +2,13 @@
   text-decoration: none;
 }
 
+.navigation-item:hover,
+.navigation-item:focus {
+  text-decoration: underline;
+}
+
+@media (min-width: 800px) {
+  .navigation-item {
+    font-size: 2rem;
+  }
+}
