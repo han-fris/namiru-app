@@ -15,7 +15,7 @@
 #specializations,
 #clothing-type,
 #materials {
-  background-color: var(--light);
+  background-color: var(--background-secondary);
 }
 
 .guide__section {
@@ -48,7 +48,7 @@
   cursor: pointer;
   position: fixed;
   left: calc(50vw - 95px);
-  bottom: 30px;
+  bottom: 25px;
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
@@ -58,6 +58,12 @@
   font-size: 1.5rem;
 }
 
+.guide__button:hover,
+.guide__button:active,
+.guide__button:focus {
+  background-color: var(--dark);
+}
+
 #creator-types {
   display: flex;
   flex-grow: 1;
@@ -65,6 +71,8 @@
 
 
 @media (min-width: 800px) {
+
+
   .guide__section-inner {
     width: 80%;
   }
