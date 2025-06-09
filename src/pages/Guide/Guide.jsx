@@ -3,22 +3,13 @@ import { PageWrapper } from '../../components/shared/PageWrapper';
 import { FilterOptionsList } from '../../components/Filter/FilterOptionsList';
 import { GuidePanel } from './GuidePanel';
 import { FilterForm } from '../../components/Filter/FilterForm';
-import { useFilters } from '../../hooks/useFilters';
-import { useNavigate } from 'react-router';
 
 export const Guide = () => {
-  const [filters, setFilters] = useFilters();
-
   return (
     <PageWrapper>
       <div className="guide">
         <div className="guide__container">
-          <FilterForm
-            submitOnChange={true}
-            onSubmit={setFilters}
-            action="/tvurci"
-            className="guide__form"
-          >
+          <FilterForm action="/tvurci">
             <section id="creator-types" className="guide__section">
               <div className="guide__section-inner">
                 <h2 className="guide__category-title">Typ tvůrce</h2>
