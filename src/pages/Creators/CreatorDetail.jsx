@@ -9,6 +9,7 @@ import {
   clothingTypes,
 } from '../../config';
 import './CreatorDetail.css';
+import { SkeletonCreatorDetail } from './SkeletonCreatorDetail';
 
 export const CreatorDetail = () => {
   const { id } = useParams();
@@ -53,7 +54,7 @@ export const CreatorDetail = () => {
   return (
     <PageWrapper>
       {loading ? (
-        <p>Loading...</p>
+        <SkeletonCreatorDetail />
       ) : (
         <>
           {creator?.error ? (
