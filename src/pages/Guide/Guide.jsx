@@ -98,13 +98,15 @@ export const Guide = () => {
             </section>
             <section id="clothing-type" className="guide__section">
               <div className="guide__section-inner">
-                <h2 className="guide__category-title">Druh oděvu</h2>
+                <h2 className="guide__category-title">
+                  4. Už víte, co chcete?
+                </h2>
                 <p className="guide__text">
-                  Někdy stačí jen malá úprava a váš oblíbený kousek hned vypadá
-                  na vás lépe a bude sloužit dál. Ať už potřebujete zkrátit
-                  rukávy, upravit siluetu, nebo přišít nové knoflíky, šikovné
-                  švadleny vám pomohou doladit co máte tak rádi tak, aby vám to
-                  vydrželo co nejdéle a cítili jste se lépe.
+                  Každý tvůrce se zaměřuje na něco jiného. Někdo rád tvoří
+                  kabáty, jiný zase šaty. Pokud víte, co máte v plánu, tak by to
+                  mohlo pomoci v hledání toho ideálního tvůrce pro váš projekt.
+                  Pokud nevíte, nebo se vám nehodí žádná z odpovědí, tak můžete
+                  přeskočit na další otázku.
                 </p>
               </div>
               <div className="guide__filters">
@@ -114,13 +116,12 @@ export const Guide = () => {
             </section>
             <section id="target-customers" className="guide__section">
               <div className="guide__section-inner">
-                <h2 className="guide__category-title">Typ zákazníka</h2>
+                <h2 className="guide__category-title">5. Kdo vlastně jste?</h2>
                 <p className="guide__text">
-                  Někdy stačí jen malá úprava a váš oblíbený kousek hned vypadá
-                  na vás lépe a bude sloužit dál. Ať už potřebujete zkrátit
-                  rukávy, upravit siluetu, nebo přišít nové knoflíky, šikovné
-                  švadleny vám pomohou doladit co máte tak rádi tak, aby vám to
-                  vydrželo co nejdéle a cítili jste se lépe.
+                  Řekněte nám, kdo jste, nebo čím jste jedineční. Narozdíl od
+                  nakupování v obchodech, v zakázkové výrobě se s unifikovanými
+                  velikostmi skoro nesetkáte. Dejte vyniknout vaší osobnosti a
+                  ukažte světu kdo jste bez ohledu na velikost.
                 </p>
               </div>
               <div className="guide__filters">
@@ -130,13 +131,18 @@ export const Guide = () => {
             </section>
             <section id="materials" className="guide__section">
               <div className="guide__section-inner">
-                <h2 className="guide__category-title">Materiály</h2>
+                <h2 className="guide__category-title">
+                  6. V čem se cítíte nejlépe?
+                </h2>
                 <p className="guide__text">
-                  Někdy stačí jen malá úprava a váš oblíbený kousek hned vypadá
-                  na vás lépe a bude sloužit dál. Ať už potřebujete zkrátit
-                  rukávy, upravit siluetu, nebo přišít nové knoflíky, šikovné
-                  švadleny vám pomohou doladit co máte tak rádi tak, aby vám to
-                  vydrželo co nejdéle a cítili jste se lépe.
+                  Druhů materiálů je velké množství, mohou se dělit podle
+                  nejrůznějších parametrů. Rozdělili jsme je alespoň podle
+                  základních kategorií. Někteří tvůrci se specializují spíše na
+                  úplety a pružné materiály, ze kterých vám vyrobí
+                  nejpohodlnější mikinu, nebo šaty na každodenní nošení. Někdo
+                  má vysněné hedvábné nebo krajkové svatební šaty, a tak zvolí
+                  kategorii náročných materiálů. Zvolte to, co vám příjde
+                  nejblíže vašemu přání, nebo přeskočte na další otázku.
                 </p>
               </div>
               <div className="guide__filters">
@@ -146,13 +152,9 @@ export const Guide = () => {
             </section>
             <section id="style" className="guide__section">
               <div className="guide__section-inner">
-                <h2 className="guide__category-title">Styl</h2>
+                <h2 className="guide__category-title">7. Co se vám líbí?</h2>
                 <p className="guide__text">
-                  Někdy stačí jen malá úprava a váš oblíbený kousek hned vypadá
-                  na vás lépe a bude sloužit dál. Ať už potřebujete zkrátit
-                  rukávy, upravit siluetu, nebo přišít nové knoflíky, šikovné
-                  švadleny vám pomohou doladit co máte tak rádi tak, aby vám to
-                  vydrželo co nejdéle a cítili jste se lépe.
+                Jak chcete působit, co děláte nebo kam vysněný kousek chcete nosit? To může také definovat styl. Styly se různě prolínají a vyvíjejí i podle doby ve které žijeme. Zkuste se zamyslet, co vyzařujete a jak by vám oblečení mohlo pomoci reflektovat váš charakter.
                 </p>
               </div>
               <div className="guide__filters">
