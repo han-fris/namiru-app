@@ -1,12 +1,48 @@
 .creator__card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
   width: 100%;
-  padding: 20px;
   margin: 10px;
   border: 1px solid var(--dark);
+  border-radius: 10px;
 }
 
+.creator__card:hover {
+  transform: scale(0.97);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.creator__container {
+  padding: 10px 16px;
+}
+
+.creator__name {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.creator__categories {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-bottom: 5px;
+}
+
+.creator__about {
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.creator__link {
+  text-align: center;
+  padding: 0 16px 10px 16px;
+}
+
+/* toto delalo chybu kdyz se nacetl jen jeden tvůrce, uzka karta*/
 @media (min-width: 800px) {
   .creator__card {
-    width: 31%
+    width: 30%;
   }
 }

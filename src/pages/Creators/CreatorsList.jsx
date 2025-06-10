@@ -15,8 +15,13 @@ export const CreatorList = () => {
     <div className="creators-list">
       <PageWrapper>
         <h1>Seznam tvůrců a filtrování</h1>
+        <div className='filters__container'>
         <Filters />
-        {loading && <h3>Načítám tvůrce... </h3>}
+        </div>
+        <div className='creators__container'>
+        {loading && (
+          <h3 className="creators-list__loading">Načítám tvůrce... </h3>
+        )}
         <CreatorsCardsList>
           {creators.map((creator) => (
             <CreatorCard
@@ -26,6 +31,7 @@ export const CreatorList = () => {
             />
           ))}
         </CreatorsCardsList>
+        </div>
       </PageWrapper>
     </div>
   );
