@@ -8,12 +8,12 @@
 }
 
 .creators-cards {
-  width: 90vw;
+  width: 98vw;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: flex-start;
-  margin: 10px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .creators-list__loading {
@@ -41,17 +41,20 @@
   .creators__container {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px
   }
 
   .filters__container {
-    width: 35vw;
+    width: 25vw;
+    margin: 15px;
   }
 
   .creators-cards {
-    width: 60vw;
-    margin: 10px;
-    justify-content: flex-end
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 65vw;
+    gap: 10px;
+    justify-content: end;
+    margin-left: auto;
   }
-
-
 }
