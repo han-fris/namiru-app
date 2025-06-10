@@ -55,20 +55,26 @@ function filterAndSortCreators(allCreators, filters) {
   return filteredCreators;
 }
 
-export const useFilteredCreators = () => {
+export const useFilteredCreators = ({ setLoading }) => {
   const [allCreators, setAllCreators] = useState(null);
   const [filteredCreators, setFilteredCreators] = useState([]);
 
   const [filters] = useFilters();
 
   useEffect(() => {
+    setLoading(true);
     const uploadCreators = async () => {
-      const response = await fetch(creatorsSourceUrl);
-      const responseData = await response.json();
-      console.log(responseData);
-      setAllCreators(responseData);
+      try {
+        const response = await fetch(creatorsSourceUrl);
+        const responseData = await response.json();
+        setAllCreators(responseData);
+      } catch (error) {
+        console.error('Error loading blog posts:', error);
+      } finally {
+        setLoading(false);
+      }
     };
-    uploadCreators();
+    void uploadCreators();
   }, []);
 
   useEffect(() => {

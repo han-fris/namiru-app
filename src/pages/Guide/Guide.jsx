@@ -33,7 +33,7 @@ export const Guide = () => {
                   Někdy stačí jen malá úprava a váš oblíbený kousek hned vypadá
                   na vás lépe a bude sloužit dál. Ať už potřebujete zkrátit
                   rukávy, upravit siluetu, nebo přišít nové knoflíky, šikovné
-                  švadleny vám pomohou doladit co máte tak rádi tak, aby vám to
+                  švadleny vám pomohou doladit co máte tagit ak rádi tak, aby vám to
                   vydrželo co nejdéle a cítili jste se lépe.
                 </p>
               </div>
