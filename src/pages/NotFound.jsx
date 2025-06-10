@@ -8,12 +8,10 @@ export const NotFound = () => {
       <div className="not-found__container">
         <h1>Nitka se přetrhla</h1>
         <p>
-          Bohužel tady nic není, ale můžete se vrátit o krok zpět, nebo jít na
-          hlavní stranu
+          Bohužel tady nic není, ale můžete se vrátit o krok zpět, nebo jít na{' '}
+          <a href="/">hlavní stranu</a>.
         </p>
-        <p className='not-found__button'>
-          <Button text="Zpátky na začátek" url="/" />
-        </p>
+        <div className="not-found__img"></div>
       </div>
     </PageWrapper>
   );
