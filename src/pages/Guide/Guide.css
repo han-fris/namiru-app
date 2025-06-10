@@ -22,6 +22,7 @@
   display: flex;
   height: calc(100vh - 92px);
   justify-content: flex-start;
+  flex-grow: 1;
 }
 
 #creator-types,
@@ -85,13 +86,6 @@
 
 
 
-/*
-#creator-types {
-  display: flex;
-  flex-grow: 1;
-}
-*/
-
 @media (min-width: 800px) {
 
 
@@ -104,7 +98,10 @@
     width: 100%;
   }
 
-  .guide__header,
+  .guide__header {
+    margin-top: 15vh;
+  }
+
   .guide__category-title {
     margin-top: 30vh;
   }

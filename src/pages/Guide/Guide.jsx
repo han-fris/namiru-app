@@ -154,11 +154,32 @@ export const Guide = () => {
               <div className="guide__section-inner">
                 <h2 className="guide__category-title">7. Co se vám líbí?</h2>
                 <p className="guide__text">
-                Jak chcete působit, co děláte nebo kam vysněný kousek chcete nosit? To může také definovat styl. Styly se různě prolínají a vyvíjejí i podle doby ve které žijeme. Zkuste se zamyslet, co vyzařujete a jak by vám oblečení mohlo pomoci reflektovat váš charakter.
+                  Jak chcete působit, co děláte, nebo kam vysněný kousek chcete
+                  nosit? To může také definovat styl. Každá z nás se vyvíjí
+                  podle životního období, místa kde žijete, ale i přátel a
+                  rodiny. Zkuste se zamyslet, co vyzařujete a jak by vám
+                  oblečení mohlo pomoci reflektovat váš charakter. Zvolte si ty
+                  kategorie, které by vás mohly nejlépe definovat.
                 </p>
               </div>
               <div className="guide__filters">
                 <FilterOptionsList name="style" />
+              </div>
+              <GuidePanel id="final" />
+            </section>
+            <section id="final" className="guide__section">
+              <div className="guide__section-inner">
+                <h2 className="guide__category-title">A co dál?</h2>
+                <p className="guide__text">
+                  Teď už stačí zobrazit tvůrce, kteří nejvíce sedí pro váš
+                  projekt a mohli by sedět i vám! Usilovně pracujeme na
+                  rozšíření databáze, takže pokud zrovna nenajdeme toho
+                  ideálního, možná se ještě nezaregistroval. Po zobrazení
+                  vybraných tvůrců si můžete ještě filtrování upravit podle
+                  potřeby, rozkliknout jednotlivé tvůrce, přečíst si o nich
+                  informace, jak probíhá proces tvorby na míru, kontakty,
+                  odkazy, a další užitečné informace. Šťastný lov!
+                </p>
               </div>
             </section>
             <div className="guide__submit">
