@@ -29,25 +29,25 @@ export const Info = () => {
               něco upravit nebo ušít na míru. Tvoříme databázi tvůrců -
               designérů, švadlenek, krejčích a dílen, ze kterých vám aplikace
               pomůže vybrat ty nejvhodnější pro váš projekt. Nevite si rady jak
-              najít toho zprávneho tvůrce? Vyzkoušejte našeho průvodce.
+              najít toho správneho tvůrce? Vyzkoušejte našeho průvodce.
             </p>
             <Button text="Vyzkoušet průvodce" url="/pruvodce" />
           </div>
           <div className="info-section">
             <h2>Pro tvůrce</h2>
-            <h3>
+            <p>
               Jste krejčí, švadlena, krejčovská dílna, oděvní ateliér nebo
               designér a chcete se stát součástí nově vznikající databáze tvůrců
               odevů na míru?{' '}
-            </h3>
+            </p>
             <p>
-              Vyplňte tento dotaznik, který nám pomůže propojit vás s
+              Vyplňte tento dotazník, který nám pomůže propojit vás s
               potenciálními klienty, kteří si pomoci chytrých filtrů snadno
               zobrazí profily tvůrců, přesně podle toho co hledají a potřebují
               ušít nebo upravit.
             </p>
             <p className="questionnarie">
-              Odkaz na dotazník:{' '}
+              Odkaz na dotazník pro tvůrce:{' '}
               <a href="https://forms.gle/cK9T1f7Jxjx2YBU56">Link</a>
             </p>
           </div>
