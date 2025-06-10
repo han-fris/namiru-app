@@ -11,7 +11,21 @@ export const Guide = () => {
         <div className="guide__container">
           <FilterForm action="/tvurci">
             <section id="creator-types" className="guide__section">
+              <div className="guide__section-inner"></div>
               <div className="guide__section-inner">
+                <h1>Průvodce</h1>
+                <p>
+                  Hledáte někoho, kdo by vám opravil zip na oblíbených
+                  kalhotech, nebo máte vysněné šaty, které si chcete nechat ušít
+                  na míru? Poradíme vám, jaké filtry by vám mohli pomoci najít
+                  nejvhodnějšího tvůrce pro váš projekt.
+                </p>
+                <h2>Jak na to?</h2>
+                <p>
+                  Jednotlivé otázky můžete přeskočit, nebo vybrat naopak více
+                  možností. Kdykoli si můžete zobrazit vybrané tvůrce a ještě
+                  doupravit filtry podle potřeby. Hodně štěstí s hledáním.
+                </p>
                 <h2 className="guide__category-title">Typ tvůrce</h2>
                 <p className="guide__text">
                   Někdy stačí jen malá úprava a váš oblíbený kousek hned vypadá
@@ -33,8 +47,8 @@ export const Guide = () => {
                   Někdy stačí jen malá úprava a váš oblíbený kousek hned vypadá
                   na vás lépe a bude sloužit dál. Ať už potřebujete zkrátit
                   rukávy, upravit siluetu, nebo přišít nové knoflíky, šikovné
-                  švadleny vám pomohou doladit co máte tagit ak rádi tak, aby vám to
-                  vydrželo co nejdéle a cítili jste se lépe.
+                  švadleny vám pomohou doladit co máte tagit ak rádi tak, aby
+                  vám to vydrželo co nejdéle a cítili jste se lépe.
                 </p>
               </div>
               <div className="guide__filters">

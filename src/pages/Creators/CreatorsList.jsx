@@ -19,7 +19,7 @@ export const CreatorList = () => {
         {' '}
         <h1 className="creators-list__header">Seznam tvůrců a filtrování</h1>
         <div className="creators__container">
-          <div className="filters__container">
+          <div className="filters__container no-result__container">
             <Filters />
           </div>
           <div className="creators-list__container">

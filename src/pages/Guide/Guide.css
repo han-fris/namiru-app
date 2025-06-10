@@ -9,7 +9,7 @@
 
 #creator-types {
   display: flex;
-  height: 90vh;
+  height: 80vh;
 }
 
 #specializations,
@@ -30,10 +30,21 @@
 }
 
 
-.guide__text {
+p {
   width: 90%;
-  margin: 20px;
+  margin-top: 8px;
 }
+
+h1 {
+  font-size: 3rem;
+  margin-top: 20px
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 20px
+}
+
 
 .guide__filters {
   text-align: left;
@@ -68,6 +79,7 @@
   display: flex;
   flex-grow: 1;
 }
+
 
 
 @media (min-width: 800px) {
