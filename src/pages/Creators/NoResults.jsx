@@ -3,9 +3,9 @@ import './CreatorsList.css';
 export const NoResults = () => {
   return (
     <div className="noResults__container">
-      <h1>Nikdo tu není</h1>
+      <h1>Nikdo tu zatím není</h1>
       <p>
-        Bohužel jsme ještě nenašli nikoho, kdo by odpovídal Vašim preferencím.
+        Bohužel jsme ještě nenašli nikoho, kdo by odpovídal vašim preferencím.
         <br />
         Pilně pracujeme na rozšíření databáze, prozatím můžete zkusit upravit
         filtrování.

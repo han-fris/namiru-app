@@ -14,8 +14,10 @@ export const HeroSection = () => {
           Můžete hledat tvůrce pomocí našeho průvodce, nebo můžete zobrazit
           všechny tvůrce a vybrat si pomocí filtrů.
         </p>
-        <Button text="Najít tvůrce" url="/pruvodce" />
-        <Button text="Ukázat všechny" url="/tvurci" />
+        <div className="hero-button">
+          <Button text="Otevřít průvodce" url="/pruvodce" />
+          <Button text="Ukázat všechny" url="/tvurci" />
+        </div>
       </div>
       <div className="hero-img"></div>
     </div>

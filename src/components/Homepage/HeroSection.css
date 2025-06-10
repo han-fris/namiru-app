@@ -23,6 +23,13 @@
   background-position: right;
 }
 
+.hero-button {
+  display: flex;
+  flex-direction: row;
+  margin-inline: 5px;
+  gap: 1rem;
+}
+
 /* desktop */
 @media (min-width: 800px) {
   .hero {
@@ -35,6 +42,7 @@
   }
 
   .hero-title {
+    margin-top: 5rem;
     font-size: 3rem;
   }
 
