@@ -58,7 +58,7 @@ export const CreatorDetail = () => {
       ) : (
         <>
           {creator?.error ? (
-            <p>Takovy tvůrce tady zatim neni...</p>
+            <p>Takovy tvůrce tady zatím není, zkus se vrátit zpátky na všechny tvůrce...</p>
           ) : (
             <div className="creator">
               <div className="profile-header">

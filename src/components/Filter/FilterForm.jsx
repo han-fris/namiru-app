@@ -1,4 +1,5 @@
 import { useCallback } from 'react';
+import './FilterOption.css';
 
 const submitOnChangeHandler = (e) => {
   e.currentTarget.requestSubmit();
@@ -14,14 +15,14 @@ export function FilterForm({
   const submitHandler = useCallback(
     (e) => {
       const formData = new FormData(e.currentTarget);
-      const newSearchParams = {};
+      const filterObj = {};
       for (const [key, value] of formData.entries()) {
-        newSearchParams[key] ??= [];
-        newSearchParams[key].push(value);
+        filterObj[key] ??= [];
+        filterObj[key].push(value);
       }
       if (onSubmit) {
         e.preventDefault();
-        onSubmit(newSearchParams);
+        onSubmit(filterObj);
       }
     },
     [onSubmit]
