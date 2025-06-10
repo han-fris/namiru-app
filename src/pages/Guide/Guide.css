@@ -40,18 +40,18 @@
   height: 100vh
 }
 */
-p {
+.guide__text {
   margin-top: 8px;
   line-height: 1.2;
 }
 
-h1 {
+.guide__header {
   font-size: 3rem;
   margin-top: 20px;
   text-align: center;
 }
 
-h2 {
+.guide__category-title {
   font-size: 1.5rem;
   margin-top: 20px;
   text-align: center;
@@ -102,7 +102,7 @@ h2 {
     width: 100%;
   }
 
-  h1 {
+  .guide__header {
     margin-top: 20vh;
   }
 

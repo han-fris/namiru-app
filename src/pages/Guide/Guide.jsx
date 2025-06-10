@@ -24,15 +24,15 @@ export const Guide = () => {
           <FilterForm action="/tvurci" onSubmit={onSubmit}>
             <section id="intro" className="guide__section">
               <div className="guide__section-inner guide__intro">
-                <h1>Průvodce</h1>
-                <p>
+                <h1 className='guide__header'>Průvodce</h1>
+                <p className="guide__text">
                   Hledáte někoho, kdo by vám opravil zip na oblíbených
                   kalhotech, nebo máte vysněné šaty, které si chcete nechat ušít
                   na míru? Poradíme vám, jaké filtry by vám mohli pomoci najít
                   nejvhodnějšího tvůrce pro váš projekt.
                 </p>
-                <h2>Jak na to?</h2>
-                <p>
+                <h2 className='guide__category-title'>Jak na to?</h2>
+                <p className="guide__text">
                   Jednotlivé otázky můžete přeskočit, nebo vybrat naopak více
                   možností. Průvodce má 7 otázek, kdykoli si můžete zobrazit
                   vybrané tvůrce a ještě doupravit filtry podle potřeby. Hodně
