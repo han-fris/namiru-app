@@ -6,6 +6,7 @@
 .filter-option__label {
   display: inline-block;
   border: 1px solid currentcolor;
+  border-radius: 20px;
   color: var(--text);
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
@@ -15,8 +16,8 @@
 
 .filter-option__label:has(input[type=checkbox]:checked) {
   background: var(--darker);
-  color: var(--lighter);
-  border-color: currentColor;
+  color: var(--button-white);
+  border-color: var(--darker);
 }
 
 .filter-option__label:has(input[type=checkbox]:not(:checked)):hover {
@@ -35,6 +36,7 @@
   padding: 0.5rem 1rem;
   margin: 0.5rem;
   cursor: pointer;
+  width: 160px;
 }
 
 /*
