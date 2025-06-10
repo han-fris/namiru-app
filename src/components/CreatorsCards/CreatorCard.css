@@ -40,9 +40,8 @@
   padding: 0 16px 10px 16px;
 }
 
-/* toto delalo chybu kdyz se nacetl jen jeden tvůrce, uzka karta*/
 @media (min-width: 800px) {
   .creator__card {
-    width: 30%;
+    width: 300px;
   }
 }
