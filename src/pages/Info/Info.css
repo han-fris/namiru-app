@@ -2,20 +2,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 3rem 5%;
-  gap: 3rem;
+  margin: 2rem 5%;
+  gap: 1rem;
   align-items: center;
 }
 
+.info-section p,
+.info-section h2,
 .info-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 3rem 5%;
-  gap: 2rem;
+  margin: 1rem 5%;
+  /* gap: 1rem; */
   align-items: center;
 }
 
+.questionnarie {
+  font-weight: 500;
+}
 
 @media (min-width: 800px) {
   .info-section {
@@ -23,6 +28,8 @@
   }
 }
 
-.questionnarie {
-  font-weight: bold;
+@media (min-width: 800px) {
+  .info-section h2 {
+    font-size: 2rem;
+  }
 }
