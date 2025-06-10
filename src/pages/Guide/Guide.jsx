@@ -22,9 +22,8 @@ export const Guide = () => {
       <div className="guide">
         <div className="guide__container">
           <FilterForm action="/tvurci" onSubmit={onSubmit}>
-            <section id="creator-types" className="guide__section">
-              <div className="guide__section-inner"></div>
-              <div className="guide__section-inner">
+            <section id="intro" className="guide__section">
+              <div className="guide__section-inner guide__intro">
                 <h1>Průvodce</h1>
                 <p>
                   Hledáte někoho, kdo by vám opravil zip na oblíbených
@@ -35,16 +34,26 @@ export const Guide = () => {
                 <h2>Jak na to?</h2>
                 <p>
                   Jednotlivé otázky můžete přeskočit, nebo vybrat naopak více
-                  možností. Kdykoli si můžete zobrazit vybrané tvůrce a ještě
-                  doupravit filtry podle potřeby. Hodně štěstí s hledáním.
+                  možností. Průvodce má 7 otázek, kdykoli si můžete zobrazit
+                  vybrané tvůrce a ještě doupravit filtry podle potřeby. Hodně
+                  štěstí s hledáním!
                 </p>
-                <h2 className="guide__category-title">Typ tvůrce</h2>
+              </div>
+              <GuidePanel id="creator-types" />
+            </section>
+            <section id="creator-types" className="guide__section">
+              <div className="guide__section-inner">
+                <h2 className="guide__category-title">
+                  1. Koho vlastně hledáte?
+                </h2>
                 <p className="guide__text">
-                  Někdy stačí jen malá úprava a váš oblíbený kousek hned vypadá
-                  na vás lépe a bude sloužit dál. Ať už potřebujete zkrátit
-                  rukávy, upravit siluetu, nebo přišít nové knoflíky, šikovné
-                  švadleny vám pomohou doladit co máte tak rádi tak, aby vám to
-                  vydrželo co nejdéle a cítili jste se lépe.
+                  Každý tvůrce se zaměřuje na něco jiného, tady si zvolte
+                  základní kategorie tvůrců. Švadleny a krejčí mají nejrůznější
+                  zaměření a pomůžou vám s opravami či realizací vašich
+                  představ. Designéři vám pomůžou, když nevíte co by vám přesně
+                  sedlo, ale líbí se vám jejich tvorba. Mohou vám také vytvořit
+                  originál, který bude propojovat i váš příběh. Krejčovské dílny
+                  se nejčastěji hodí designérům nebo firmám pro větší zakázky.
                 </p>
               </div>
               <div className="guide__filters">
