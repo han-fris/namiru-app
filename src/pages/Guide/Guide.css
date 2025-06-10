@@ -122,19 +122,25 @@
   .guide__text {
     width: 100%;
     font-size: 1.1rem;
+    line-height: 1.4;
   }
 
   .guide__header {
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 
   .guide__category-title {
-    margin-top: 30vh;
+    margin-top: 25vh;
   }
 
   .guide__filters-inner {
     max-width: 800px;
     width: 100%;
+  }
+
+  .guide-link {
+
+    margin: 20px 0;
   }
 
 }
