@@ -2,6 +2,14 @@ import { useState, useEffect, useCallback } from 'react';
 import { useSearchParams } from 'react-router';
 import { filterCategories } from '../config';
 
+export const createFilterSearchParams = (filters) => {
+  const stringifiedSearchParams = new URLSearchParams();
+  for (const key in filters) {
+    stringifiedSearchParams.set(key, filters[key].join(' '));
+  }
+  return stringifiedSearchParams;
+};
+
 function parseSearchParams(searchParams) {
   const newFilters = [];
   for (const filterCategory of filterCategories) {
@@ -22,11 +30,7 @@ export function useFilters() {
 
   const setFilters = useCallback(
     (newFilters) => {
-      const stringifiedSearchParams = new URLSearchParams();
-      for (const key in newFilters) {
-        stringifiedSearchParams.set(key, newFilters[key].join(' '));
-      }
-      setSearchParams(stringifiedSearchParams);
+      setSearchParams(createFilterSearchParams(newFilters));
     },
     [setSearchParams]
   );

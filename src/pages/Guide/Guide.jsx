@@ -1,15 +1,27 @@
+import { useNavigate } from 'react-router';
 import './Guide.css';
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { FilterOptionsList } from '../../components/Filter/FilterOptionsList';
 import { GuidePanel } from './GuidePanel';
 import { FilterForm } from '../../components/Filter/FilterForm';
+import { createFilterSearchParams } from '../../hooks/useFilters';
+import { useCallback } from 'react';
 
 export const Guide = () => {
+  const navigate = useNavigate();
+  const onSubmit = useCallback(
+    (filterObj) => {
+      const filterSearchParams = createFilterSearchParams(filterObj);
+      navigate(`/tvurci?${filterSearchParams.toString()}`);
+    },
+    [navigate]
+  );
+
   return (
     <PageWrapper>
       <div className="guide">
         <div className="guide__container">
-          <FilterForm action="/tvurci">
+          <FilterForm action="/tvurci" onSubmit={onSubmit}>
             <section id="creator-types" className="guide__section">
               <div className="guide__section-inner"></div>
               <div className="guide__section-inner">
@@ -36,9 +48,9 @@ export const Guide = () => {
                 </p>
               </div>
               <div className="guide__filters">
-                <FilterOptionsList name="creatorType"></FilterOptionsList>
+                <FilterOptionsList name="creatorType" />
               </div>
-              <GuidePanel id="specializations"></GuidePanel>
+              <GuidePanel id="specializations" />
             </section>
             <section id="specializations" className="guide__section">
               <div className="guide__section-inner">
@@ -52,9 +64,9 @@ export const Guide = () => {
                 </p>
               </div>
               <div className="guide__filters">
-                <FilterOptionsList name="specialization"></FilterOptionsList>
+                <FilterOptionsList name="specialization" />
               </div>
-              <GuidePanel id="region"></GuidePanel>
+              <GuidePanel id="region" />
             </section>
             <section id="region" className="guide__section">
               <div className="guide__section-inner">
@@ -68,9 +80,9 @@ export const Guide = () => {
                 </p>
               </div>
               <div className="guide__filters">
-                <FilterOptionsList name="region"></FilterOptionsList>
+                <FilterOptionsList name="region" />
               </div>
-              <GuidePanel id="clothing-type"></GuidePanel>
+              <GuidePanel id="clothing-type" />
             </section>
             <section id="clothing-type" className="guide__section">
               <div className="guide__section-inner">
@@ -84,9 +96,9 @@ export const Guide = () => {
                 </p>
               </div>
               <div className="guide__filters">
-                <FilterOptionsList name="clothingType"></FilterOptionsList>
+                <FilterOptionsList name="clothingType" />
               </div>
-              <GuidePanel id="target-customers"></GuidePanel>
+              <GuidePanel id="target-customers" />
             </section>
             <section id="target-customers" className="guide__section">
               <div className="guide__section-inner">
@@ -100,9 +112,9 @@ export const Guide = () => {
                 </p>
               </div>
               <div className="guide__filters">
-                <FilterOptionsList name="targetCustomers"></FilterOptionsList>
+                <FilterOptionsList name="targetCustomers" />
               </div>
-              <GuidePanel id="materials"></GuidePanel>
+              <GuidePanel id="materials" />
             </section>
             <section id="materials" className="guide__section">
               <div className="guide__section-inner">
@@ -116,9 +128,9 @@ export const Guide = () => {
                 </p>
               </div>
               <div className="guide__filters">
-                <FilterOptionsList name="materials"></FilterOptionsList>
+                <FilterOptionsList name="materials" />
               </div>
-              <GuidePanel id="style"></GuidePanel>
+              <GuidePanel id="style" />
             </section>
             <section id="style" className="guide__section">
               <div className="guide__section-inner">
@@ -132,7 +144,7 @@ export const Guide = () => {
                 </p>
               </div>
               <div className="guide__filters">
-                <FilterOptionsList name="style"></FilterOptionsList>
+                <FilterOptionsList name="style" />
               </div>
             </section>
             <div className="guide__submit">
