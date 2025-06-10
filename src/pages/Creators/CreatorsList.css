@@ -20,23 +20,24 @@
   margin: 30px;
 }
 
-.creator-list__header {
-  text-align: center;
-}
-
 .creators__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .filters__container {
   width: 100%;
 }
 
-@media(min-width: 800px) {
+.noResults__container {
+  width: 100%;
+  margin-top: 20px;
+}
 
+@media(min-width: 800px) {
 
   .creators__container {
     flex-direction: row;
@@ -45,7 +46,7 @@
   }
 
   .filters__container {
-    width: 25vw;
+    width: 30vw;
     margin: 15px;
   }
 
@@ -56,5 +57,9 @@
     gap: 10px;
     justify-content: end;
     margin-left: auto;
+  }
+
+  .noResults__container {
+    max-width: 65vw;
   }
 }
