@@ -7,6 +7,9 @@
   margin: 10px;
   opacity: 1;
   transform: scaleX(1);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .creator__card:hover {
@@ -37,10 +40,30 @@
   overflow: hidden;
 }
 
-.creator__link {
+.creator__link a {
+  color: var(--dark);
+  border: 0.5px solid var(--dark);
+  border-radius: 50px;
+  padding: 8px 15px;
+  margin-bottom: 10px;
   text-align: center;
-  padding: 0 16px 10px 16px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
 }
+
+.creator__link a:focus,
+.creator__link a:hover,
+.creator__link a:active {
+  border: 0.5px solid var(--lighter);
+  color: var(--lighter);
+  background-color: var(--darker);
+}
+
+
+
+
+
 
 @media (min-width: 800px) {
   .creator__card {

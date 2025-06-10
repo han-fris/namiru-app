@@ -1,5 +1,5 @@
 footer {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--text);
 
   div {
@@ -22,7 +22,7 @@ footer {
 .navigation-lower {
   margin: 1rem 0;
   font-weight: 200;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 
