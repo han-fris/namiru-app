@@ -1,4 +1,5 @@
 import { useCallback } from 'react';
+import './FilterOption.css';
 
 const submitOnChangeHandler = (e) => {
   e.currentTarget.requestSubmit();

@@ -6,3 +6,24 @@
 .creators-list__loading {
   margin: 30px;
 }
+
+.creator-list__header {
+  text-align: center;
+}
+
+.creators-cards {
+  display: flex;
+  align-items: flex-start;
+}
+
+.creators__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media(min-width: 800px) {
+  .creators__container {
+    flex-direction: row;
+  }
+}
