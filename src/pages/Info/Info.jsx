@@ -29,7 +29,7 @@ export const Info = () => {
               něco upravit nebo ušít na míru. Tvoříme databázi tvůrců -
               designérů, švadlenek, krejčích a dílen, ze kterých vám aplikace
               pomůže vybrat ty nejvhodnější pro váš projekt. Nevite si rady jak
-              najít toho zprávneho tvůrce? Vyzkoušejte našeho průvodce.
+              najít toho správneho tvůrce? Vyzkoušejte našeho průvodce.
             </p>
             <Button text="Vyzkoušet průvodce" url="/pruvodce" />
           </div>
