@@ -24,14 +24,14 @@ export const Guide = () => {
           <FilterForm action="/tvurci" onSubmit={onSubmit}>
             <section id="intro" className="guide__section">
               <div className="guide__section-inner guide__intro">
-                <h1 className='guide__header'>Průvodce</h1>
+                <h1 className="guide__header">Průvodce</h1>
                 <p className="guide__text">
                   Hledáte někoho, kdo by vám opravil zip na oblíbených
                   kalhotech, nebo máte vysněné šaty, které si chcete nechat ušít
-                  na míru? Poradíme vám, jaké filtry by vám mohli pomoci najít
+                  na míru? Poradíme vám, jaké filtry by vám mohly pomoci najít
                   nejvhodnějšího tvůrce pro váš projekt.
                 </p>
-                <h2 className='guide__category-title'>Jak na to?</h2>
+                <h2 className="guide__title">Jak na to?</h2>
                 <p className="guide__text">
                   Jednotlivé otázky můžete přeskočit, nebo vybrat naopak více
                   možností. Průvodce má 7 otázek, kdykoli si můžete zobrazit
@@ -63,13 +63,14 @@ export const Guide = () => {
             </section>
             <section id="specializations" className="guide__section">
               <div className="guide__section-inner">
-                <h2 className="guide__category-title">Zaměření</h2>
+                <h2 className="guide__category-title">2. Co potřebujete?</h2>
                 <p className="guide__text">
-                  Někdy stačí jen malá úprava a váš oblíbený kousek hned vypadá
-                  na vás lépe a bude sloužit dál. Ať už potřebujete zkrátit
-                  rukávy, upravit siluetu, nebo přišít nové knoflíky, šikovné
-                  švadleny vám pomohou doladit co máte tagit ak rádi tak, aby
-                  vám to vydrželo co nejdéle a cítili jste se lépe.
+                  Máte doma kalhoty, které potřebují zkrátit? Nebo jste si
+                  koupili krásnou látku a máte vymyšleno co z ní. Někteří tvůrci
+                  se specializují také na upcycling, takže vám mohou přešít to,
+                  co už nenosíte. Kousek od designéra je investice, která si
+                  může nést silný příběh, nebo se hodí pro speciální
+                  příležitosti. Jaká bude tedy vaše cesta?
                 </p>
               </div>
               <div className="guide__filters">
@@ -79,13 +80,15 @@ export const Guide = () => {
             </section>
             <section id="region" className="guide__section">
               <div className="guide__section-inner">
-                <h2 className="guide__category-title">Region</h2>
+                <h2 className="guide__category-title">3. Máte to daleko?</h2>
                 <p className="guide__text">
-                  Někdy stačí jen malá úprava a váš oblíbený kousek hned vypadá
-                  na vás lépe a bude sloužit dál. Ať už potřebujete zkrátit
-                  rukávy, upravit siluetu, nebo přišít nové knoflíky, šikovné
-                  švadleny vám pomohou doladit co máte tak rádi tak, aby vám to
-                  vydrželo co nejdéle a cítili jste se lépe.
+                  Pro menší úpravy a zakázky, které spěchají se hodí někdo
+                  blízko. Někteří tvůrci nemají prodejnu s výlohou nebo vstup z
+                  ulice, ale třeba jsou zrovna nedaleko vás. Jindy si zas pro
+                  něco speciálního rádi zajedete i dál. Návštěva takového tvůrce
+                  může být spojená s dalším zážitkem, nebo třeba s výletem, na
+                  který si vzpomenete při nošení takového kousku. Vyberte váš
+                  kraj, kam jezdíte, nebo přeskočte na další.
                 </p>
               </div>
               <div className="guide__filters">
