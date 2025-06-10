@@ -7,17 +7,6 @@
   text-align: center;
 }
 
-#creator-types {
-  display: flex;
-  height: 80vh;
-}
-
-#specializations,
-#clothing-type,
-#materials {
-  background-color: var(--background-secondary);
-}
-
 .guide__section {
   flex-grow: 1;
   display: flex;
@@ -25,30 +14,49 @@
   justify-content: center;
   align-items: center;
   max-width: 100%;
+  height: 100vh;
   padding: 20px;
+}
+
+#intro {
+  display: flex;
+  height: calc(100vh - 92px);
+  justify-content: flex-start;
+}
+
+#creator-types,
+#region,
+#target-customers,
+#style {
+  background-color: var(--background-secondary);
   height: 100vh
 }
 
-
-p {
-  width: 90%;
+/*
+#specializations,
+#clothing-type,
+#materials {
+  background-color: var(--background-secondary);
+  height: 100vh
+}
+*/
+.guide__text {
   margin-top: 8px;
+  line-height: 1.2;
 }
 
-h1 {
+.guide__header {
   font-size: 3rem;
-  margin-top: 20px
+  margin-top: 20px;
+  text-align: center;
 }
 
-h2 {
+.guide__category-title {
   font-size: 1.5rem;
-  margin-top: 20px
+  margin-top: 20px;
+  text-align: center;
 }
 
-
-.guide__filters {
-  text-align: left;
-}
 
 .guide__button {
   background-color: var(--darker);
@@ -86,11 +94,16 @@ h2 {
 
 
   .guide__section-inner {
-    width: 80%;
+    max-width: 700px;
+    width: 80vw;
   }
 
   .guide__text {
-    width: 60%;
+    width: 100%;
+  }
+
+  .guide__header {
+    margin-top: 20vh;
   }
 
 }
