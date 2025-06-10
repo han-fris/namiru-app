@@ -1,0 +1,28 @@
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem 5%;
+  gap: 3rem;
+  align-items: center;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem 5%;
+  gap: 2rem;
+  align-items: center;
+}
+
+
+@media (min-width: 800px) {
+  .info-section {
+    font-size: 1.3rem;
+  }
+}
+
+.questionnarie {
+  font-weight: bold;
+}
