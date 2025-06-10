@@ -7,7 +7,7 @@ export const NoResults = () => {
       <p>
         Bohužel jsme ještě nenašli nikoho, kdo by odpovídal Vašim preferencím.
         <br />
-        Pylně pracujeme na rozšíření databáze a prozatím můžete zkusit upravit
+        Pilně pracujeme na rozšíření databáze, prozatím můžete zkusit upravit
         filtrování.
       </p>
       <p></p>
