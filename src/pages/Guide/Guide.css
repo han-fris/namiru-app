@@ -1,5 +1,5 @@
 .guide {
-  width: 100vw;
+
   display: flex;
 }
 
@@ -14,15 +14,15 @@
   justify-content: flex-start;
   align-items: center;
   width: 100vw;
-  height: 100vh;
-  padding: 10px
+  min-height: 100vh;
+}
+
+.guide__section-inner {
+  width: 95vw;
 }
 
 #intro {
-  display: flex;
   height: calc(100vh - 92px);
-  justify-content: flex-start;
-  flex-grow: 1;
 }
 
 #creator-types,
@@ -30,7 +30,6 @@
 #target-customers,
 #style {
   background-color: var(--background-secondary);
-  height: 100vh
 }
 
 /*
@@ -61,7 +60,7 @@
 }
 
 .guide__filters {
-  width: 100%;
+  width: 95vw;
   display: flex;
   justify-content: center;
 }
@@ -113,7 +112,6 @@
 
 @media (min-width: 800px) {
 
-
   .guide__section-inner {
     max-width: 800px;
     width: 80vw;
@@ -139,7 +137,6 @@
   }
 
   .guide-link {
-
     margin: 20px 0;
   }
 
