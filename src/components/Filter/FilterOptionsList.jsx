@@ -1,4 +1,4 @@
-import './FilterOption.css';
+import './FilterOptionsList.css';
 import { filtersByCategoryName } from '../../config';
 import { FilterOption } from './FilterOption';
 

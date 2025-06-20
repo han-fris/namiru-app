@@ -1,25 +1,3 @@
-.filter-category__summary {
-  border: 1px solid currentcolor;
-  color: var(--text);
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-  cursor: pointer;
-  width: 180px;
-}
-
-.filter-category__details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.filter-option-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .filter-option__input {
   appearance: none;
   -webkit-appearance: none;
@@ -32,7 +10,6 @@
   color: var(--text);
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
-  margin: 0.5rem;
   cursor: pointer;
 }
 
@@ -48,10 +25,4 @@
 
 .filter-option__label:has(input[type=checkbox]:focus-visible) {
   opacity: 0.5;
-}
-
-.filter__form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }

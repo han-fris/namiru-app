@@ -1,0 +1,13 @@
+.filters__options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 800px) {
+  .filters__options {
+    justify-content: flex-start
+  }
+}
