@@ -22,12 +22,16 @@ footer {
 .navigation-lower {
   margin: 1rem 0;
   font-weight: 200;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 
 @media (min-width: 800px) {
   footer {
     font-size: 2rem;
+  }
+
+  .navigation-lower {
+    margin-bottom: 1rem;
   }
 }

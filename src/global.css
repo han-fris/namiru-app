@@ -110,7 +110,8 @@ header {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: baseline;
   margin-top: 1rem;
 }
 
@@ -132,8 +133,9 @@ footer {
 }
 
 a {
-  color: var(--text-navigation);
+  color: var(--dark);
   transition: transform 0.2s ease;
+
 }
 
 a:hover,

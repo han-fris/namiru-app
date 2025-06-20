@@ -7,7 +7,20 @@ export const Header = () => {
       <Link to={'/'} className="brand">
         Namiru
       </Link>
-      <Link to={'/blog'} className="navigation-item"></Link>
+      <div className="header__menu">
+        <Link to={'/tvurci'} className="navigation-item">
+          Tvůrci
+        </Link>
+        <Link to={'/pruvodce'} className="navigation-item">
+          Průvodce
+        </Link>
+        <Link to={'/blog'} className="navigation-item">
+          Blog
+        </Link>
+        <Link to={'/info'} className="navigation-item">
+          Info
+        </Link>
+      </div>
     </header>
   );
 };

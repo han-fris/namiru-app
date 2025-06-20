@@ -76,8 +76,8 @@
   padding: 10px 20px;
   cursor: pointer;
   position: fixed;
-  left: calc(50vw - 100px);
-  bottom: 25px;
+  left: calc(50vw - 90px);
+  bottom: 3rem;
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
@@ -136,6 +136,12 @@
 
   .guide-link {
     margin: 20px 0;
+  }
+
+  .guide__button,
+  .guide__button:visited {
+    bottom: 1.7rem;
+    left: calc(50vw - 102px);
   }
 
 }
