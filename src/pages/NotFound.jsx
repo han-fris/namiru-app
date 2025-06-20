@@ -1,5 +1,4 @@
 import { PageWrapper } from '../components/shared/PageWrapper';
-import { Button } from '../components/shared/Button';
 import './NotFound.css';
 
 export const NotFound = () => {
