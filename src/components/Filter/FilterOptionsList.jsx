@@ -6,7 +6,7 @@ export const FilterOptionsList = ({ name }) => {
   const filterOption = filtersByCategoryName[name];
 
   return (
-    <div className="filter-category__details">
+    <div className="filter-option-list">
       {Object.entries(filterOption.options).map(([value, label]) => (
         <FilterOption key={value} label={label} value={value} name={name} />
       ))}

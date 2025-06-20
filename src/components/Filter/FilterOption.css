@@ -8,6 +8,18 @@
   width: 180px;
 }
 
+.filter-category__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.filter-option-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .filter-option__input {
   appearance: none;
   -webkit-appearance: none;
