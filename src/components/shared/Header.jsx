@@ -1,25 +1,21 @@
 import { Link } from 'react-router';
 import './Header.css';
+import { HamburgerMenu } from './HamburgerMenu';
+import { Navigation } from './Navigation';
 
 export const Header = () => {
   return (
     <header>
-      <Link to={'/'} className="brand">
-        Namiru
-      </Link>
-      <div className="header__menu">
-        <Link to={'/tvurci'} className="navigation-item">
-          Tvůrci
+      <div className="logo">
+        <Link to={'/'} className="brand">
+          Namiru
         </Link>
-        <Link to={'/pruvodce'} className="navigation-item">
-          Průvodce
-        </Link>
-        <Link to={'/blog'} className="navigation-item">
-          Blog
-        </Link>
-        <Link to={'/info'} className="navigation-item">
-          Info
-        </Link>
+      </div>
+      <div className="header__navigation">
+        <Navigation />
+      </div>
+      <div className="header__hamburgermenu">
+        <HamburgerMenu />
       </div>
     </header>
   );

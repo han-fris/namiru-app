@@ -1,0 +1,30 @@
+.header__hamburgermenu .nav-bar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lighter);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  z-index: 999;
+}
+
+.header__navigation .nav-bar {
+  list-style: none;
+}
+
+.hamburger-react {
+  z-index: 1000;
+}
+
+
+@media (min-width: 800px) {
+  .nav-bar {
+    background-color: transparent;
+    position: unset;
+  }
+}

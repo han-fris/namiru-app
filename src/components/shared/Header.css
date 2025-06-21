@@ -1,9 +1,16 @@
-
 .header__menu {
   display: flex;
   gap: 1rem;
+  flex-direction: column;
 }
 
+.header__navigation {
+  display: none;
+}
+
+.header__hamburgermenu {
+  display: flex;
+}
 
 .navigation-item {
   text-underline-offset: 3px;
@@ -17,9 +24,28 @@
   transform: translateY(-1px);
 }
 
+.brand {
+  position: relative;
+  z-index: 1001;
+}
+
 
 @media (min-width: 800px) {
   .navigation-item {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .header__menu {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+  }
+
+  .header__navigation {
+    display: flex;
+  }
+
+  .header__hamburgermenu {
+    display: none;
   }
 }

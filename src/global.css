@@ -132,13 +132,16 @@ footer {
   margin: 1rem 0;
 }
 
-a {
+a,
+a:visited {
   color: var(--dark);
-  transition: transform 0.2s ease;
+  /* transition: transform 0.2s ease;*/
 
 }
 
+a:focus,
 a:hover,
-a:focus {
-  transform: translateY(-1px);
+a:active {
+  color: var(--darker);
+  /* transform: translateY(-1px);*/
 }
