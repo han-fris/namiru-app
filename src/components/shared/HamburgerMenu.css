@@ -1,0 +1,18 @@
+.mobile-menu {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: translateX(0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 999;
+}
+
+.mobile-menu.closing {
+  opacity: 0;
+  transform: translateX(100%);
+  /* nebo jiný směr animace */
+}
