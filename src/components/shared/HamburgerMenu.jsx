@@ -4,6 +4,7 @@ import { Navigation } from './Navigation';
 
 export const HamburgerMenu = () => {
   const [open, setOpen] = useState(false);
+  const handleClose = () => setOpen(false);
 
   return (
     <div>
@@ -15,7 +16,7 @@ export const HamburgerMenu = () => {
         direction="right"
         color="var(--dark)"
       />
-      {open && <Navigation />}
+      {open && <Navigation onClose={handleClose} />}
     </div>
   );
 };

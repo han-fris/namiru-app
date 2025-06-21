@@ -10,18 +10,24 @@
 
 .header__hamburgermenu {
   display: flex;
+
+  font-size: 2rem;
 }
 
-.navigation-item {
-  text-underline-offset: 3px;
+.navigation-item,
+.navigation-item:visited {
+  /* text-underline-offset: 3px;
   text-decoration-thickness: 1px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease;*/
+  text-decoration: none;
 }
 
 .navigation-item:hover,
+.navigation-item:active,
 .navigation-item:focus {
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-  transform: translateY(-1px);
+  /*text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);*/
+  color: var(--darker);
 }
 
 .brand {
