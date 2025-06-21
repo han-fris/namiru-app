@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Hamburger from 'hamburger-react';
 import { Navigation } from './Navigation';
-import './Hamburger.css'
 
 export const HamburgerMenu = () => {
   const [open, setOpen] = useState(false);
