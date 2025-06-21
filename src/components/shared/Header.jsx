@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import './Header.css';
-import HamburgerMenu from './HamburgerMenu';
+import { HamburgerMenu } from './HamburgerMenu';
 import { Navigation } from './Navigation';
 
 export const Header = () => {
