@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Hamburger from 'hamburger-react';
 import { Navigation } from './Navigation';
-import './HamburgerMenu.css'
+import './HamburgerMenu.css';
 
 export const HamburgerMenu = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +11,7 @@ export const HamburgerMenu = () => {
     setTimeout(() => {
       setOpen(false);
       setIsClosing(false);
-    }, 300);
+    }, 500);
   };
 
   return (

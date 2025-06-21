@@ -10,8 +10,8 @@
 
 .header__hamburgermenu {
   display: flex;
-
   font-size: 2rem;
+  margin: 0;
 }
 
 .navigation-item,
