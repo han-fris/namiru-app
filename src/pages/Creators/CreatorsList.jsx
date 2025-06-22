@@ -5,13 +5,16 @@ import { Filters } from '../../components/Filter/Filters';
 import { PageWrapper } from '../../components/shared/PageWrapper';
 import { NoResults } from './NoResults';
 import { useFilteredCreators } from '../../hooks/useFilteredCreators';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './CreatorsList.css';
 
 export const CreatorList = () => {
   const [loading, setLoading] = useState(true);
-
   const creators = useFilteredCreators({ setLoading });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="creators-list">

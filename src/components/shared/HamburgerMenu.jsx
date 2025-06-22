@@ -11,7 +11,7 @@ export const HamburgerMenu = () => {
     setTimeout(() => {
       setOpen(false);
       setIsClosing(false);
-    }, 500);
+    }, 200);
   };
 
   return (
