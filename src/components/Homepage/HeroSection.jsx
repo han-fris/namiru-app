@@ -8,9 +8,10 @@ export const HeroSection = () => {
         <h1 className="hero-title">Hledáme oděvní tvůrce</h1>
         <p className="hero-text">
           Vítejte na nové platformě, která pomůže najít zákazníkům ideálního
-          tvůrce pro jejich šatních vytvořený na míru. Pokud jsi krejčí, švadlena, oděvní
-          dílna nebo designér, tak se můžeš zaregistrovat a zapojit do naší
-          databáze. Čím více tvůrců v databázi bude, tím více lidem pomůže.
+          tvůrce pro jejich šatních vytvořený na míru. Pokud jsi krejčí,
+          švadlena, oděvní dílna nebo designér, tak se můžeš zaregistrovat a
+          zapojit do naší databáze. Čím více tvůrců v databázi bude, tím více
+          lidem pomůže.
         </p>
         <div className="hero-button">
           <Button
