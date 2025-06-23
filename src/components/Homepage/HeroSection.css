@@ -29,7 +29,7 @@
   /* margin-inline: 5px;*/
   gap: 1rem;
   /* max-width: 350px;*/
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 
@@ -61,9 +61,9 @@
 
   .hero-button {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-inline: 5px;
-    max-width: 350px;
+    max-width: 40vw;
     justify-content: flex-start;
   }
 
