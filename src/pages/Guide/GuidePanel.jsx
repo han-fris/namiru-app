@@ -1,8 +1,8 @@
-export const GuidePanel = ({ id }) => {
+export const GuidePanel = ({ id, button }) => {
   return (
     <div className="guide-panel">
       <a className="guide-link" href={`#${id}`}>
-        Další nebo přeskočit
+        {button}
       </a>
     </div>
   );

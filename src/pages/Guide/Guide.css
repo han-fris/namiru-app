@@ -76,15 +76,16 @@
   padding: 10px 20px;
   cursor: pointer;
   position: fixed;
-  left: calc(50vw - 90px);
-  bottom: 3rem;
+  right: 1rem;
+  bottom: 5rem;
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  max-width: 50vw;
 }
 
 .guide__button:focus,
@@ -99,7 +100,7 @@
   color: var(--dark);
   border: 0.5px solid var(--dark);
   padding: 10px 30px;
-  margin: 10px 0;
+  margin: 1rem 0 2rem 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -135,13 +136,14 @@
   }
 
   .guide-link {
-    margin: 20px 0;
+    margin: 2rem 0;
   }
 
   .guide__button,
   .guide__button:visited {
-    bottom: 1.7rem;
-    left: calc(50vw - 102px);
+    bottom: 4rem;
+    right: 4rem;
+    font-size: 1.5rem;
   }
 
 }
