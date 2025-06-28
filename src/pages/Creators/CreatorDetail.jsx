@@ -80,35 +80,39 @@ export const CreatorDetail = () => {
                   </p>
 
                   <div className="contact-links">
-                    <a href={`mailto:${creator.email}`}>Email</a>
-                    <a href={`tel:${creator.phone}`}>Telefon</a>
-                    {creator.website && (
-                      <a
-                        href={creator.website}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Web
-                      </a>
-                    )}
-                    {creator.facebook && (
-                      <a
-                        href={creator.facebook}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Facebook
-                      </a>
-                    )}
-                    {creator.instagram && (
-                      <a
-                        href={creator.instagram}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Instagram
-                      </a>
-                    )}
+                    <p>
+                      <a href={`mailto:${creator.email}`}>{creator.email}</a>
+                      <a href={`tel:${creator.phone}`}>{creator.phone}</a>
+                    </p>
+                    <p>
+                      {creator.website && (
+                        <a
+                          href={creator.website}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Web
+                        </a>
+                      )}
+                      {creator.facebook && (
+                        <a
+                          href={creator.facebook}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Facebook
+                        </a>
+                      )}
+                      {creator.instagram && (
+                        <a
+                          href={creator.instagram}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Instagram
+                        </a>
+                      )}
+                    </p>
                   </div>
                   {selectedMaterials.length > 0 && (
                     <section>
