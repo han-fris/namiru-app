@@ -58,7 +58,10 @@ export const CreatorDetail = () => {
       ) : (
         <>
           {creator?.error ? (
-            <p>Takovy tvůrce tady zatím není, zkus se vrátit zpátky na všechny tvůrce...</p>
+            <p>
+              Takovy tvůrce tady zatím není, zkus se vrátit zpátky na všechny
+              tvůrce...
+            </p>
           ) : (
             <div className="creator">
               <div className="profile-header">
@@ -88,13 +91,22 @@ export const CreatorDetail = () => {
                         Web
                       </a>
                     )}
-                    {creator.social_links && (
+                    {creator.facebook && (
                       <a
-                        href={creator.social_links}
+                        href={creator.facebook}
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Sociální sítě
+                        Facebook
+                      </a>
+                    )}
+                    {creator.instagram && (
+                      <a
+                        href={creator.instagram}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Instagram
                       </a>
                     )}
                   </div>
