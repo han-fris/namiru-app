@@ -79,6 +79,10 @@ export const CreatorDetail = () => {
                     {creator.city}, {creator.region_text}
                   </p>
 
+                  {creator.address_agreement && (
+                    <p className="address">{creator.street}</p>
+                  )}
+
                   <div className="contact-links">
                     <p>
                       <a href={`mailto:${creator.email}`}>{creator.email}</a>
@@ -178,17 +182,21 @@ export const CreatorDetail = () => {
                   {creator.order_processing_time_text}
                 </p>
                 <p>
-                  <strong>Bezbariérový přístup:</strong> {creator.accessibility}
+                  <strong>Bezbariérový přístup:</strong> {creator.accessibility}{' '}
+                  <br />
+                  {creator.accessibility_about && creator.accessibility_about}
                 </p>
                 <p>
                   <strong>Jazyky:</strong> {creator.languages_text}
                 </p>
               </section>
 
-              <section className="pricing">
-                <h2>Cenové rozmezí</h2>
-                <p>{creator.price_range_text}</p>
-              </section>
+              {creator.price_range_text && (
+                <section className="pricing">
+                  <h2>Cenové rozmezí</h2>
+                  <p>{creator.price_range_text}</p>
+                </section>
+              )}
             </div>
           )}
         </>
