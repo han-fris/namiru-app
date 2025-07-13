@@ -74,7 +74,11 @@ export const CreatorDetail = () => {
                 <div className="profile-info">
                   <p className="label">Představuje se</p>
                   <h1>{creator.name}</h1>
-                  <p className="creator-type">{creator.type_text}</p>
+                  <p className="creator-type">
+                    {creator.type_text}
+                    {creator.type_text_other &&
+                      `, ${creator.type_text_other}`}
+                  </p>
                   <p className="region">
                     {creator.city}, {creator.region_text}
                   </p>

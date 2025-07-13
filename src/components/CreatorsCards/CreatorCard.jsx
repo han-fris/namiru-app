@@ -8,6 +8,7 @@ export const CreatorCard = ({ name, creator }) => {
         <h2 className="creator__name">{name}</h2>
         <p className="creator__categories">
           {creator.type_text}
+          {creator.type_text_other && `, ${creator.type_text_other}`}
           <br />
           <strong>
             {creator.city}, {creator.region_text}
