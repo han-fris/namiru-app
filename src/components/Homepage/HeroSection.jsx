@@ -5,25 +5,9 @@ export const HeroSection = () => {
   return (
     <div className="hero">
       <div className="hero-container">
-        <h1 className="hero-title">Hledáme oděvní tvůrce</h1>
+        <h1 className="hero-title">Od úpravy oděvů po šití na zakázku</h1>
         <p className="hero-text">
-          Vítejte na nové platformě, která pomůže najít zákazníkům ideálního
-          tvůrce pro jejich šatních vytvořený na míru. Pokud jsi krejčí,
-          švadlena, oděvní dílna nebo designér, tak se můžeš zaregistrovat a
-          zapojit do naší databáze. Čím více tvůrců v databázi bude, tím více
-          lidem pomůže.
-        </p>
-        <div className="hero-button">
-          <Button
-            text="Zaregistrovat se"
-            url="https://forms.gle/16LUPVpTVBQXB5VL8"
-          />
-        </div>
-
-        <p className="hero-text">
-          Pokud chcete hledat tvůrce, pro váš projekt, tak můžete hledat tvůrce
-          pomocí našeho průvodce, nebo zobrazit všechny tvůrce a vybrat si
-          pomocí filtrů.
+Každý oděv může být výjimečný, stačí správný tvůrce. Namiru vám pomůže najít zkušenou švadlenu, precizního krejčího nebo kreativního oděvního designéra, který promění váš nápad ve skutečnost. Opravy, úpravy i šití na míru, vše snadno a na jednom místě.
         </p>
         <div className="hero-button">
           <Button text="Otevřít průvodce" url="/pruvodce" />

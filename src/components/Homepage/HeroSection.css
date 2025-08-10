@@ -48,12 +48,13 @@
   }
 
   .hero-text {
-    max-width: 90%;
+    max-width: 80%;
   }
 
   .hero-title {
     margin-top: 2rem;
     font-size: 3rem;
+    max-width: 80%;
   }
 
   .hero-img {
