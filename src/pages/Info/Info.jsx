@@ -7,7 +7,7 @@ export const Info = () => {
     <PageWrapper>
       <div className="info">
         <div className="info-container">
-          <h1 className="info-title">Ahoj a Vítejte!❤️</h1>
+          <h1 className="info-title">Vítejte</h1>
           <div className="info-section">
             <h2>O nás</h2>
             <p>
@@ -32,24 +32,6 @@ export const Info = () => {
               najít toho správneho tvůrce? Vyzkoušejte našeho průvodce.
             </p>
             <Button text="Vyzkoušet průvodce" url="/pruvodce" />
-          </div>
-          <div className="info-section">
-            <h2>Pro tvůrce</h2>
-            <p>
-              Jste krejčí, švadlena, krejčovská dílna, oděvní ateliér nebo
-              designér a chcete se stát součástí nově vznikající databáze tvůrců
-              odevů na míru?{' '}
-            </p>
-            <p>
-              Vyplňte tento dotazník, který nám pomůže propojit vás s
-              potenciálními klienty, kteří si pomoci chytrých filtrů snadno
-              zobrazí profily tvůrců, přesně podle toho co hledají a potřebují
-              ušít nebo upravit.
-            </p>
-            <p className="questionnarie">
-              Odkaz na dotazník pro tvůrce:{' '}
-              <a href="https://forms.gle/cK9T1f7Jxjx2YBU56">Link</a>
-            </p>
           </div>
         </div>
       </div>

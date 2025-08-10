@@ -21,11 +21,7 @@ export const Navigation = ({ onClose }) => {
               Průvodce
             </Link>
           </li>
-          <li>
-            <Link to={'/blog'} className="navigation-item" onClick={onClose}>
-              Blog
-            </Link>
-          </li>
+
           <li>
             <Link to={'/info'} className="navigation-item" onClick={onClose}>
               Info

@@ -8,9 +8,6 @@ export const Footer = () => {
         Namiru
       </Link>
       <div className="navigation-lower">
-        <Link to="/blog" className="navigation-item">
-          Blog
-        </Link>
         <Link to="/tvurci" className="navigation-item">
           Najdi tvůrce
         </Link>
