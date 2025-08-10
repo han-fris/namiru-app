@@ -25,9 +25,7 @@
   .info-section {
     font-size: 1.3rem;
   }
-}
 
-@media (min-width: 800px) {
   .info-section h2 {
     font-size: 2rem;
   }

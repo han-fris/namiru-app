@@ -7,7 +7,6 @@ export const Info = () => {
     <PageWrapper>
       <div className="info">
         <div className="info-container">
-          <h1 className="info-title">Vítejte</h1>
           <div className="info-section">
             <h2>O nás</h2>
             <p>
@@ -20,7 +19,7 @@ export const Info = () => {
             <h2>O Projektu</h2>
             <p>
               Pomáháme lidem najít ty správné šikovné ruce na úpravy oblečení
-              nebo šití na míru. Chcete něco padnoucího? U nás to najdete.
+              nebo šití na míru.
             </p>
             <p>
               Konfekční velikosti nejsou pro každého, každý jsme jedinečný a
@@ -31,6 +30,8 @@ export const Info = () => {
               pomůže vybrat ty nejvhodnější pro váš projekt. Nevíte si rady jak
               najít toho správneho tvůrce? Vyzkoušejte našeho průvodce.
             </p>
+          </div>
+          <div className="info-button">
             <Button text="Vyzkoušet průvodce" url="/pruvodce" />
           </div>
         </div>
